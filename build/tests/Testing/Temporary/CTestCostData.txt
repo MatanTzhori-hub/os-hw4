@@ -1,0 +1,98 @@
+malloc_1.Sanity 7 0.0011967
+malloc_1.Check 0 1
+malloc_1.0 0 1
+malloc_1.Max 0 1
+malloc_2.good 3 0.000693233
+malloc_1.Check 0 1
+malloc_1.0 0 1
+malloc_1.Max 0 1
+malloc_1.Check 0 1
+malloc_1.0 0 1
+malloc_1.Max 0 1
+malloc_2.Sanity 3 0.000931233
+malloc_2.Check 0 0
+malloc_2.0 0 0
+malloc_2.Max 0 0
+malloc_2.free 4 0.0009576
+malloc_2.free 4 0.0009576
+malloc_2.free 4 0.0009576
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.realloc 1 0.0049064
+malloc_2.realloc 1 0.0049064
+malloc_2.srealloc 0 0
+malloc_1.Check 0 1
+malloc_1.0 0 1
+malloc_1.Max 0 1
+malloc_2.good 1 0.0025692
+malloc_1.Check 0 1
+malloc_1.0 0 1
+malloc_1.Max 0 1
+malloc_2.Check 0 1
+malloc_2.0 0 1
+malloc_2.Max 0 0
+malloc_2.free 4 0.0009576
+malloc_2.free 4 0.0009576
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.realloc 1 0.0049064
+malloc_2.srealloc 0 0
+malloc_1.Check 0 1
+malloc_1.0 0 1
+malloc_1.Max 0 1
+malloc_2.Check 0 1
+malloc_2.0 0 1
+malloc_2.Max 0 1
+malloc_2.free 4 0.0009576
+malloc_2.free 4 0.0009576
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.Reuse 1 0.0039079
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.scalloc 1 0.0038185
+malloc_2.realloc 1 0.0049064
+malloc_2.srealloc 0 0
+malloc_1.Check size 1 0.0030398
+malloc_1.0 size 1 0.0030672
+malloc_1.Max size 1 0.0028322
+malloc_2.Check size 1 0.0028312
+malloc_2.0 size 1 0.0039122
+malloc_2.Max size 1 0.004248
+malloc_2.free 2 1 0.0042209
+malloc_2.free 3 1 0.0039691
+malloc_2.Reuse two blocks 1 0.0040289
+malloc_2.Reuse two blocks reverse 1 0.0038382
+malloc_2.Reuse two blocks both 1 0.0038692
+malloc_2.Reuse two blocks sizes small 1 0.0116959
+malloc_2.Reuse two blocks sizes large 1 0.003903
+malloc_2.scalloc taint 1 0.0034989
+malloc_2.scalloc 0 size 1 0.0027684
+malloc_2.scalloc Max size num 1 0.0560226
+malloc_2.scalloc Max size size 1 0.0517806
+malloc_2.scalloc Max size both 1 0.0477966
+malloc_2.realloc shrink 1 0.0053006
+malloc_2.srealloc Max size 1 0.0028056
+---

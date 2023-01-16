@@ -1,0 +1,14 @@
+# Target labels
+ catch2-populate
+# Source files and their labels
+/home/rotem/os/os-hw4/build/_deps/catch2-subbuild/CMakeFiles/catch2-populate
+/home/rotem/os/os-hw4/build/_deps/catch2-subbuild/CMakeFiles/catch2-populate.rule
+/home/rotem/os/os-hw4/build/_deps/catch2-subbuild/CMakeFiles/catch2-populate-complete.rule
+/home/rotem/os/os-hw4/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build.rule
+/home/rotem/os/os-hw4/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure.rule
+/home/rotem/os/os-hw4/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download.rule
+/home/rotem/os/os-hw4/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install.rule
+/home/rotem/os/os-hw4/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir.rule
+/home/rotem/os/os-hw4/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch.rule
+/home/rotem/os/os-hw4/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test.rule
+/home/rotem/os/os-hw4/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update.rule

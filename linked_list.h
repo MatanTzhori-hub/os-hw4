@@ -8,34 +8,42 @@ public:
     MallocMetadata* prev;
 
     MallocMetadata() = default;
-    MallocMetadata(size_t size) : size(size), is_free(false){};
+    MallocMetadata(size_t size) : size(size), is_free(false) {};
 };
  
 class AllocedBlocksList{
-
     public:
         MallocMetadata* head;
+        AllocedBlocksList() = default;
+        ~AllocedBlocksList() = default;
+    
+        void* insertBlock(size_t size);
+        void* allocateFreeBlock(size_t size);
+        void releaseBlock(void* ptr);
 
-        size_t num_free_blocks;
-        size_t num_free_bytes;
-        size_t num_allocated_blocks;
-        size_t num_allocated_bytes;
-        size_t num_meta_data_bytes;
-        size_t size_meta_data;
- 
-public:
-    AllocedBlocksList() = default;
- 
-    void* insertBlock(size_t size);
-    void* allocateFreeBlock(size_t size);
-    void releaseBlock(void* ptr);
+        size_t num_free_blocks();
+        size_t num_free_bytes();
+        size_t num_allocated_blocks();
+        size_t num_allocated_bytes();
+        size_t num_meta_data_bytes();
+        size_t size_meta_data();
+
+        static MallocMetadata* data_to_meta(void* p);
+        static void* meta_to_data(void* p);
 };
- 
+
+MallocMetadata* AllocedBlocksList::data_to_meta(void* p){
+    return (MallocMetadata*)((char*)p - sizeof(MallocMetadata));
+}
+
+void* AllocedBlocksList::meta_to_data(void* p){
+    return (char*)p + sizeof(MallocMetadata);
+}
 
 void* AllocedBlocksList::insertBlock(size_t size)
 {
     MallocMetadata* new_block = (MallocMetadata*)sbrk(sizeof(*new_block) + size);
-    if(*(int*)new_block == -1){
+    if(new_block == (void*)-1){
         return NULL;
     }
     new_block->is_free = 0;
@@ -43,13 +51,9 @@ void* AllocedBlocksList::insertBlock(size_t size)
     new_block->next = NULL;
     new_block->prev = NULL;
 
-    num_allocated_blocks++;
-    num_allocated_bytes+=size;
-    num_meta_data_bytes+=size_meta_data;
-
     if (head == NULL) {
         head = new_block;
-        return (char*)head + size_meta_data;
+        return meta_to_data(head);
     }
  
     MallocMetadata* temp = head;
@@ -59,7 +63,7 @@ void* AllocedBlocksList::insertBlock(size_t size)
     
     new_block->prev = temp;
     temp->next = new_block;
-    return (char*)new_block + size_meta_data;
+    return meta_to_data(new_block);
 }
 
 void* AllocedBlocksList::allocateFreeBlock(size_t size){
@@ -72,10 +76,7 @@ void* AllocedBlocksList::allocateFreeBlock(size_t size){
     while (temp != NULL) {
         if(temp->is_free == 1 && temp->size >= size){
             temp->is_free = 0;
-            num_free_blocks--;
-            num_free_bytes -= temp->size;
-
-            return (char*)temp + size_meta_data;
+            return meta_to_data(temp);
         }
         temp = temp->next;
     }
@@ -83,12 +84,65 @@ void* AllocedBlocksList::allocateFreeBlock(size_t size){
 }
 
 void AllocedBlocksList::releaseBlock(void* ptr){
-    MallocMetadata* meta_data_ptr = (MallocMetadata*)((char*)ptr - size_meta_data);
+    MallocMetadata* meta_data_ptr = data_to_meta(ptr);
     if(meta_data_ptr->is_free){
         return;
     }
-
     meta_data_ptr->is_free = 1;
-    this->num_free_blocks++;
-    this->num_free_bytes += meta_data_ptr->size;
+}
+
+size_t AllocedBlocksList::num_free_blocks() {
+    size_t free_blocks = 0;
+
+    MallocMetadata* temp = this->head;
+    while (temp != NULL) {
+        if(temp->is_free == 1) {
+            free_blocks++;
+        }
+        temp = temp->next;
+    }
+    return free_blocks;
+}
+
+size_t AllocedBlocksList::num_free_bytes() {
+    size_t free_bytes = 0;
+
+    MallocMetadata* temp = this->head;
+    while (temp != NULL) {
+        if(temp->is_free == 1) {
+            free_bytes += temp->size;
+        }
+        temp = temp->next;
+    }
+    return free_bytes;
+}
+
+size_t AllocedBlocksList::num_allocated_blocks() {
+    size_t alloced_blocks = 0;
+
+    MallocMetadata* temp = this->head;
+    while (temp != NULL) {
+        alloced_blocks++;
+        temp = temp->next;
+    }
+    return alloced_blocks;
+}
+
+size_t AllocedBlocksList::num_allocated_bytes() {
+    size_t alloced_bytes = 0;
+
+    MallocMetadata* temp = this->head;
+    while (temp != NULL) {
+        alloced_bytes += temp->size;
+        temp = temp->next;
+    }
+    return alloced_bytes;
+}
+
+size_t AllocedBlocksList::num_meta_data_bytes() {
+    return num_allocated_blocks() * size_meta_data();
+}
+
+size_t AllocedBlocksList::size_meta_data() {
+    return sizeof(MallocMetadata);
 }

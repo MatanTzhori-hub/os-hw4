@@ -4,42 +4,19 @@
 #include <cstring>
 #include "linked_list.h" 
 
-#define MAL_SUCCESS 0
-#define MAL_FAIL 1
+#define MAX_SIZE 100000000
 
-AllocedBlocksList* allocatedBlocks;
-
-int initAllocedBlocks(){
-    if(allocatedBlocks == NULL){
-        allocatedBlocks = (AllocedBlocksList*)sbrk(sizeof(*allocatedBlocks));
-        if(*(int*)allocatedBlocks == -1){
-            return MAL_FAIL;
-        }
-        allocatedBlocks->head = NULL;
-        
-        allocatedBlocks->num_free_blocks = 0;
-        allocatedBlocks->num_free_bytes = 0;
-        allocatedBlocks->num_allocated_blocks = 0;
-        allocatedBlocks->num_allocated_bytes = 0;
-        allocatedBlocks->num_meta_data_bytes = 0;
-        allocatedBlocks->size_meta_data = sizeof(MallocMetadata);
-    }
-
-    return MAL_SUCCESS;
-}
+AllocedBlocksList allocatedBlocks = AllocedBlocksList();
 
 void* smalloc(size_t size){
-    if(initAllocedBlocks() == MAL_FAIL)
-        return NULL;
-
-    if(size == 0 || size >= 100000000){
+    if(size == 0 || size > MAX_SIZE){
         return NULL;
     }
 
-    void* new_block = allocatedBlocks->allocateFreeBlock(size);
+    void* new_block = allocatedBlocks.allocateFreeBlock(size);
 
     if(new_block == NULL){
-        new_block = allocatedBlocks->insertBlock(size);
+        new_block = allocatedBlocks.insertBlock(size);
     }
 
     return new_block;
@@ -57,24 +34,22 @@ void* scalloc(size_t num, size_t size){
 }
 
 void sfree(void* p){
-    if(initAllocedBlocks() == MAL_FAIL)
-        return;
-
     if(p == NULL){
         return;
     }
 
-    allocatedBlocks->releaseBlock(p);
+    allocatedBlocks.releaseBlock(p);
 }
 
 void* srealloc(void* oldp, size_t size){
-    if(initAllocedBlocks() == MAL_FAIL)
-        return NULL;
+    if (oldp == NULL) {
+        return smalloc(size);
+    }
 
-    if(oldp == NULL || size == 0 || size > 100000000){
+    if(size == 0 || size > MAX_SIZE){
         return NULL;
     }
-    MallocMetadata* meta_data_ptr = (MallocMetadata*)((char*)oldp - sizeof(MallocMetadata));
+    MallocMetadata* meta_data_ptr = AllocedBlocksList::data_to_meta(oldp);
 
     if(meta_data_ptr->size >= size){
         return oldp;
@@ -92,45 +67,45 @@ void* srealloc(void* oldp, size_t size){
 }
 
 size_t _num_free_blocks(){
-    return allocatedBlocks->num_free_blocks;
+    return allocatedBlocks.num_free_blocks();
 }
 
 size_t _num_free_bytes(){
-    return allocatedBlocks->num_free_bytes;
+    return allocatedBlocks.num_free_bytes();
 }
 
 size_t _num_allocated_blocks(){
-    return allocatedBlocks->num_allocated_blocks;
+    return allocatedBlocks.num_allocated_blocks();
 }
 
 size_t _num_allocated_bytes(){
-    return allocatedBlocks->num_allocated_bytes;
+    return allocatedBlocks.num_allocated_bytes();
 }
 
 size_t _num_meta_data_bytes(){
-    return allocatedBlocks->num_meta_data_bytes;
+    return allocatedBlocks.num_meta_data_bytes();
 }
 
 size_t _size_meta_data(){
-    return allocatedBlocks->size_meta_data;
+    return allocatedBlocks.size_meta_data();
 }
 
 
-int main(){
-    void *base = sbrk(0);
-    char *a = (char *)smalloc(10);
-    if(a!=NULL){
-        printf("good\n");
-    }
-    if((size_t)base + _size_meta_data() == (size_t)a){
-        printf("good\n");
-    }
-    //verify_blocks(1, 10, 0, 0);
-    //verify_size(base);
-    sfree(a);
-    //verify_blocks(1, 10, 1, 10);
-    //verify_size(base);
-}
+// int main(){
+//     void *base = sbrk(0);
+//     char *a = (char *)smalloc(10);
+//     if(a!=NULL){
+//         printf("good\n");
+//     }
+//     if((size_t)base + _size_meta_data() == (size_t)a){
+//         printf("good\n");
+//     }
+//     //verify_blocks(1, 10, 0, 0);
+//     //verify_size(base);
+//     sfree(a);
+//     //verify_blocks(1, 10, 1, 10);
+//     //verify_size(base);
+// }
 
 // typedef struct{
 //     int i1;

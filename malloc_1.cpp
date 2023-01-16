@@ -8,7 +8,7 @@ void* smalloc(size_t size){
     }
 
     void* allocated_mem = sbrk(size);
-    if(*(int*)allocated_mem == -1){
+    if(allocated_mem == (void*)-1){
         return NULL;
     }
 
