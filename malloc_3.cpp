@@ -28,6 +28,9 @@ class AllocedBlocksList{
         void releaseBlock(void* ptr);
         void* SplitAndInsert(size_t new_size, MallocMetadata* old_block);
         void RemoveBlock(MallocMetadata* block);
+        MallocMetadata* GetNextIfFree(MallocMetadata* ptr);
+        MallocMetadata* GetPrevIfFree(MallocMetadata* ptr);
+        void UnionAndInsert(MallocMetadata* curr, MallocMetadata* next, MallocMetadata* prev);
 
         size_t num_free_blocks();
         size_t num_free_bytes();
@@ -128,14 +131,56 @@ void* AllocedBlocksList::allocateFreeBlock(size_t size){
 
 MallocMetadata* AllocedBlocksList::GetNextIfFree(MallocMetadata* ptr) {
     // Find ptr + size + metadata_size
+    MallocMetadata* curr = this->head;
+    while (curr != NULL) {
+        if((char*)curr == (char*)ptr + ptr->size + size_meta_data()) {
+            return curr->is_free ? curr : nullptr;
+        }
+        curr = curr->next;
+    }
+    return nullptr;
 }
 
 MallocMetadata* AllocedBlocksList::GetPrevIfFree(MallocMetadata* ptr) {
     // Find curr + curr_size + metadata_size == ptr
+    MallocMetadata* curr = this->head;
+    while (curr != NULL) {
+        if((char*)curr + curr->size + size_meta_data() == (char*)ptr) {
+            return curr->is_free ? curr : nullptr;
+        }
+        curr = curr->next;
+    }
+    return nullptr;
 }
 
 void AllocedBlocksList::UnionAndInsert(MallocMetadata* curr, MallocMetadata* next, MallocMetadata* prev) {
+    int situation = 0;
+    RemoveBlock(curr);
+    if(next != NULL){
+        RemoveBlock(next);
+        situation+= 1;
+    }
+    if(prev != NULL){
+        RemoveBlock(prev);
+        situation+= 2;
+    }
 
+    switch(situation){
+        case 1:
+            insertBlock(curr->size + next->size + size_meta_data(), curr);
+            curr->is_free = 1;
+            break;
+        case 2:
+            insertBlock(curr->size + prev->size + size_meta_data(), prev);
+            prev->is_free = 1;
+            break;
+        case 3:
+            insertBlock(prev->size + curr->size + next->size + 2 * size_meta_data(), prev);
+            prev->is_free = 1;
+            break;
+    }
+
+    return;
 }
 
 void AllocedBlocksList::releaseBlock(void* ptr){
@@ -148,7 +193,35 @@ void AllocedBlocksList::releaseBlock(void* ptr){
     MallocMetadata* next_free = this->GetNextIfFree(meta_data_ptr);
     MallocMetadata* prev_free = this->GetPrevIfFree(meta_data_ptr);
 
-    this->UnionAndInsert(meta_data_ptr, next_free, prev_free);
+    if(next_free != NULL ||  prev_free != NULL){
+        this->UnionAndInsert(meta_data_ptr, next_free, prev_free);
+    }
+}
+
+void AllocedBlocksList::RemoveBlock(MallocMetadata* block) {
+    if (block->prev == NULL) {
+        head = block->next;
+        if(block->next != NULL){
+        head->prev = NULL;
+        }
+
+    } else {
+        block->prev->next = block->next;
+        if(block->next!=NULL){
+            block->next->prev = block->prev;
+        }
+    }
+
+    block->next = NULL;
+    block->prev = NULL;
+}
+
+
+void* AllocedBlocksList::SplitAndInsert(size_t new_size, MallocMetadata* old_block) {
+    RemoveBlock(old_block);
+    void* free_block = insertBlock(old_block->size - new_size - size_meta_data(), (MallocMetadata*)((char*)old_block + new_size + size_meta_data()));
+    data_to_meta(free_block)->is_free = 1;
+    return insertBlock(new_size, old_block);
 }
 
 size_t AllocedBlocksList::num_free_blocks() {
@@ -205,26 +278,6 @@ size_t AllocedBlocksList::num_meta_data_bytes() {
 
 size_t AllocedBlocksList::size_meta_data() {
     return sizeof(MallocMetadata);
-}
-
-void AllocedBlocksList::RemoveBlock(MallocMetadata* block) {
-    if (block->prev == NULL) {
-        head = block->next;
-
-    } else {
-        block->prev->next = block->next;
-    }
-
-    block->next = NULL;
-    block->prev = NULL;
-}
-
-
-void* AllocedBlocksList::SplitAndInsert(size_t new_size, MallocMetadata* old_block) {
-    RemoveBlock(old_block);
-    void* free_block = insertBlock(old_block->size - new_size - size_meta_data(), (MallocMetadata*)((char*)old_block + new_size + size_meta_data()));
-    data_to_meta(free_block)->is_free = 1;
-    return insertBlock(new_size, old_block);
 }
 
 
@@ -323,18 +376,31 @@ size_t _size_meta_data(){
 
 int main(){
     void *base = sbrk(0);
-    char *a = (char *)smalloc(256);
+    MallocMetadata *a = (MallocMetadata *)smalloc(256);
     sfree(a);
-    char *b = (char *)smalloc(128);
-    char *c = (char *)smalloc(128 - _size_meta_data());
-    if(b + 128 == c - _size_meta_data()){
-        printf("good\n");
-    }
-     printf("test\n");
-    //verify_blocks(1, 10, 0, 0);
-    //verify_size(base);
+    MallocMetadata *b = (MallocMetadata *)smalloc(128);
+    MallocMetadata *c = (MallocMetadata *)smalloc(64);
+    MallocMetadata *d = (MallocMetadata *)smalloc(64);
+    MallocMetadata *e = (MallocMetadata *)smalloc(128);
+    MallocMetadata *f = (MallocMetadata *)smalloc(256);
+    sfree(d);
+    sfree(e);
     sfree(b);
+    MallocMetadata *g = (MallocMetadata *)smalloc(128);
+
     sfree(c);
-    //verify_blocks(1, 10, 1, 10);
-    //verify_size(base);
+    sfree(f);
+    sfree(g);
+
+    MallocMetadata *h = (MallocMetadata *)smalloc(400);
+    MallocMetadata *i = (MallocMetadata *)smalloc(100);
+    MallocMetadata *j = (MallocMetadata *)smalloc(100);
+    sfree(h);
+    MallocMetadata *k = (MallocMetadata *)smalloc(20);
+
+    sfree(i);
+    sfree(j);
+    sfree(k);
+
+    return 0;
 }
