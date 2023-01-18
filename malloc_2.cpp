@@ -60,7 +60,7 @@ void* srealloc(void* oldp, size_t size){
         return NULL;
     }
 
-    memmove(new_block, oldp, size);
+    memmove(new_block, oldp, AllocedBlocksList::data_to_meta(oldp)->size);
     sfree(oldp);
 
     return new_block;

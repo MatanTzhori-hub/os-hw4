@@ -7,9 +7,11 @@
 
 #define MAX_SIZE 100000000
 #define LARGE_BLOCK 128 * 1024
+#define DEADBEEF 0xdeadbeef
 
 class MallocMetadata{
 public:
+    int cookie;
     size_t size;
     bool is_free;
     MallocMetadata* next;
@@ -24,6 +26,7 @@ class AllocedBlocksList{
         MallocMetadata* head;
         MallocMetadata* head_large;
         MallocMetadata* wilderness_block;
+        int cookie_code;
 
         AllocedBlocksList() = default;
         ~AllocedBlocksList() = default;
@@ -31,13 +34,17 @@ class AllocedBlocksList{
         void* insertBlock(size_t size, MallocMetadata* block = nullptr);
         void* allocateFreeBlock(size_t size);
         void releaseBlock(void* ptr);
+        void releaseRegularBlock(void* ptr);
         void* SplitAndInsert(size_t new_size, MallocMetadata* old_block);
         void RemoveBlock(MallocMetadata* block);
         MallocMetadata* GetNextIfFree(MallocMetadata* ptr);
         MallocMetadata* GetPrevIfFree(MallocMetadata* ptr);
-        void UnionAndInsert(MallocMetadata* curr, MallocMetadata* next, MallocMetadata* prev);
+        void UnionAndInsert(MallocMetadata* curr, MallocMetadata* next, MallocMetadata* prev, bool isfree = 1);
         void* insertLargeBlock(size_t size);
-
+        void releaseLargeBlock(void* ptr);
+        void VerifyCookieCode(MallocMetadata* block);
+        void* ReallocateRegularBlock(MallocMetadata* block, size_t size);
+        void* ReallocateLargeBlock(MallocMetadata* block, size_t size);
 
         size_t num_free_blocks();
         size_t num_free_bytes();
@@ -46,16 +53,30 @@ class AllocedBlocksList{
         size_t num_meta_data_bytes();
         size_t size_meta_data();
 
-        static MallocMetadata* data_to_meta(void* p);
-        static void* meta_to_data(void* p);
+        MallocMetadata* data_to_meta(void* p);
+        void* meta_to_data(MallocMetadata* p);
 };
 
+AllocedBlocksList::AllocedBlocksList() : head(nullptr), head_large(nullptr), wilderness_block(nullptr), cookie_code(rand()){}
+
 MallocMetadata* AllocedBlocksList::data_to_meta(void* p){
-    return (MallocMetadata*)((char*)p - sizeof(MallocMetadata));
+    MallocMetadata* meta_data_ptr = (MallocMetadata*)((char*)p - sizeof(MallocMetadata));
+    VerifyCookieCode(meta_data_ptr);
+    return meta_data_ptr;
 }
 
-void* AllocedBlocksList::meta_to_data(void* p){
+void* AllocedBlocksList::meta_to_data(MallocMetadata* p){
+    VerifyCookieCode(p);
     return (char*)p + sizeof(MallocMetadata);
+}
+
+void AllocedBlocksList::VerifyCookieCode(MallocMetadata* block){
+    if(block == NULL){
+        return;
+    }
+    if(block->cookie != cookie_code){
+        exit(DEADBEEF);
+    }
 }
 
 void* AllocedBlocksList::insertBlock(size_t size, MallocMetadata* new_block)
@@ -74,7 +95,12 @@ void* AllocedBlocksList::insertBlock(size_t size, MallocMetadata* new_block)
             wilderness_block = new_block;
         }
     }
+    else{
+        VerifyCookieCode(new_block);
+    }
+    VerifyCookieCode(head);
 
+    new_block->cookie = this->cookie_code;
     new_block->is_free = 0;
     new_block->size = size;
     new_block->next = NULL;
@@ -84,7 +110,7 @@ void* AllocedBlocksList::insertBlock(size_t size, MallocMetadata* new_block)
         head = new_block;
         return meta_to_data(head);
     }
-
+    
     if (head->size > new_block->size) {
         new_block->next = head;
         head->prev = new_block;
@@ -102,6 +128,7 @@ void* AllocedBlocksList::insertBlock(size_t size, MallocMetadata* new_block)
  
     MallocMetadata* temp = head;
     while (temp->next != NULL) {
+        VerifyCookieCode(temp->next);
         if (temp->next->size > new_block->size) {
             temp->next->prev = new_block;
             new_block->next = temp->next;
@@ -117,6 +144,7 @@ void* AllocedBlocksList::insertBlock(size_t size, MallocMetadata* new_block)
             break;
         }
         temp = temp->next;
+        VerifyCookieCode(temp->next);
     }
     
     if (temp->next == NULL) {
@@ -135,6 +163,7 @@ void* AllocedBlocksList::allocateFreeBlock(size_t size){
     }
  
     while (temp != NULL) {
+        VerifyCookieCode(temp);
         if(temp->is_free == 1 && temp->size >= size){
             temp->is_free = 0;
             return meta_to_data(temp);
@@ -146,8 +175,10 @@ void* AllocedBlocksList::allocateFreeBlock(size_t size){
 
 MallocMetadata* AllocedBlocksList::GetNextIfFree(MallocMetadata* ptr) {
     // Find ptr + size + metadata_size
+    VerifyCookieCode(ptr);
     MallocMetadata* curr = this->head;
     while (curr != NULL) {
+        VerifyCookieCode(curr);
         if((char*)curr == (char*)ptr + ptr->size + size_meta_data()) {
             return curr->is_free ? curr : nullptr;
         }
@@ -158,8 +189,10 @@ MallocMetadata* AllocedBlocksList::GetNextIfFree(MallocMetadata* ptr) {
 
 MallocMetadata* AllocedBlocksList::GetPrevIfFree(MallocMetadata* ptr) {
     // Find curr + curr_size + metadata_size == ptr
+    VerifyCookieCode(ptr);
     MallocMetadata* curr = this->head;
     while (curr != NULL) {
+        VerifyCookieCode(curr);
         if((char*)curr + curr->size + size_meta_data() == (char*)ptr) {
             return curr->is_free ? curr : nullptr;
         }
@@ -168,7 +201,7 @@ MallocMetadata* AllocedBlocksList::GetPrevIfFree(MallocMetadata* ptr) {
     return nullptr;
 }
 
-void AllocedBlocksList::UnionAndInsert(MallocMetadata* curr, MallocMetadata* next, MallocMetadata* prev) {
+void AllocedBlocksList::UnionAndInsert(MallocMetadata* curr, MallocMetadata* next, MallocMetadata* prev, bool isfree) {
     int situation = 0;
     RemoveBlock(curr);
     if(next != NULL){
@@ -183,21 +216,21 @@ void AllocedBlocksList::UnionAndInsert(MallocMetadata* curr, MallocMetadata* nex
     switch(situation){
         case 1: // Union curr and next
             insertBlock(curr->size + next->size + size_meta_data(), curr);
-            curr->is_free = 1;
+            curr->is_free = isfree;
             if (next == wilderness_block) {
                 wilderness_block = curr;
             }
             break;
         case 2: // Union curr and prev
             insertBlock(curr->size + prev->size + size_meta_data(), prev);
-            prev->is_free = 1;
+            prev->is_free = isfree;
             if (curr == wilderness_block) {
                 wilderness_block = prev;
             }
             break;
         case 3: // Union curr, next and prev
             insertBlock(prev->size + curr->size + next->size + 2 * size_meta_data(), prev);
-            prev->is_free = 1;
+            prev->is_free = isfree;
             if (next == wilderness_block) {
                 wilderness_block = prev;
             }
@@ -208,6 +241,19 @@ void AllocedBlocksList::UnionAndInsert(MallocMetadata* curr, MallocMetadata* nex
 }
 
 void AllocedBlocksList::releaseBlock(void* ptr){
+    if(ptr == NULL){
+        return;
+    }
+    MallocMetadata* meta_data_ptr = data_to_meta(ptr);
+    if(meta_data_ptr->size >= LARGE_BLOCK){
+        releaseLargeBlock(ptr);
+    }
+    else{
+        releaseRegularBlock(ptr);
+    }
+}
+
+void AllocedBlocksList::releaseRegularBlock(void* ptr){
     MallocMetadata* meta_data_ptr = data_to_meta(ptr);
     if(meta_data_ptr->is_free){
         return;
@@ -216,13 +262,14 @@ void AllocedBlocksList::releaseBlock(void* ptr){
 
     MallocMetadata* next_free = this->GetNextIfFree(meta_data_ptr);
     MallocMetadata* prev_free = this->GetPrevIfFree(meta_data_ptr);
-
+    
     if(next_free != NULL ||  prev_free != NULL){
         this->UnionAndInsert(meta_data_ptr, next_free, prev_free);
     }
 }
 
 void AllocedBlocksList::RemoveBlock(MallocMetadata* block) {
+    VerifyCookieCode(block);
     if (block->prev == NULL) {
         head = block->next;
         if(block->next != NULL){
@@ -230,6 +277,8 @@ void AllocedBlocksList::RemoveBlock(MallocMetadata* block) {
         }
 
     } else {
+        VerifyCookieCode(block->prev);
+        VerifyCookieCode(block->next);
         block->prev->next = block->next;
         if(block->next!=NULL){
             block->next->prev = block->prev;
@@ -242,6 +291,7 @@ void AllocedBlocksList::RemoveBlock(MallocMetadata* block) {
 
 
 void* AllocedBlocksList::SplitAndInsert(size_t new_size, MallocMetadata* old_block) {
+    VerifyCookieCode(old_block);
     RemoveBlock(old_block);
     void* free_block = insertBlock(old_block->size - new_size - size_meta_data(), (MallocMetadata*)((char*)old_block + new_size + size_meta_data()));
     if (old_block == wilderness_block) {
@@ -252,29 +302,186 @@ void* AllocedBlocksList::SplitAndInsert(size_t new_size, MallocMetadata* old_blo
 }
 
 void* AllocedBlocksList::insertLargeBlock(size_t size) {
-    MallocMetadata* new_block = (MallocMetadata*)mmap(sizeof(*new_block) + size);
-    if(new_block == (void*)-1){
+    MallocMetadata* new_large_block = (MallocMetadata*)mmap(NULL ,sizeof(*new_large_block) + size, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS , -1, 0);
+    if(new_large_block == (void*)-1){
         return NULL;
     }
-    new_block->is_free = 0;
-    new_block->size = size;
-    new_block->next = NULL;
-    new_block->prev = NULL;
+    VerifyCookieCode(head_large);
 
-    if (head == NULL) {
-        head = new_block;
-        return meta_to_data(head);
+    new_large_block->cookie = this->cookie_code;
+    new_large_block->is_free = 0;
+    new_large_block->size = size;
+    new_large_block->next = NULL;
+    new_large_block->prev = NULL;
+
+    if (head_large == NULL) {
+        head_large = new_large_block;
+        return meta_to_data(head_large);
     }
  
-    MallocMetadata* temp = head;
+    MallocMetadata* temp = head_large;
     while (temp->next != NULL) {
+        VerifyCookieCode(temp);
         temp = temp->next;
     }
     
-    new_block->prev = temp;
-    temp->next = new_block;
-    return meta_to_data(new_block);
+    new_large_block->prev = temp;
+    temp->next = new_large_block;
+    return meta_to_data(new_large_block);
 }
+
+void AllocedBlocksList::releaseLargeBlock(void* ptr){
+    MallocMetadata* meta_data_ptr = data_to_meta(ptr);
+    VerifyCookieCode(head_large);
+
+    if (meta_data_ptr->prev == NULL) {
+        head_large = meta_data_ptr->next;
+        if(meta_data_ptr->next != NULL){
+        head_large->prev = NULL;
+        }
+
+    } else { 
+        VerifyCookieCode(meta_data_ptr->next);
+        VerifyCookieCode(meta_data_ptr->prev);
+        meta_data_ptr->prev->next = meta_data_ptr->next;
+        if(meta_data_ptr->next!=NULL){
+            meta_data_ptr->next->prev = meta_data_ptr->prev;
+        }
+    }
+
+    meta_data_ptr->next = NULL;
+    meta_data_ptr->prev = NULL;
+
+    munmap(meta_data_ptr, meta_data_ptr->size + size_meta_data());
+}
+
+void* AllocedBlocksList::ReallocateRegularBlock(MallocMetadata* block, size_t size){
+    if(block->size >= size){ // 1.a
+        if(block->size - size >= 128){
+            SplitAndInsert(size, block);
+        }
+        return meta_to_data(block);
+    }
+
+    MallocMetadata* next = GetNextIfFree(block);
+    MallocMetadata* prev = GetPrevIfFree(block);
+
+    if(prev != NULL){ // 1.b
+        if(block->size + prev->size + size_meta_data() >= size){ // 1.b no wilderness
+            RemoveBlock(block);
+            RemoveBlock(prev);
+            insertBlock(block->size + prev->size + size_meta_data(), prev);
+            if(block == wilderness_block){
+                wilderness_block = prev;
+            }
+            if(prev->size - size >= 128){
+                SplitAndInsert(size, prev);
+                // After splitting, we check if we need to update the wilderness_block (that we change to prev in the last if)
+                if(prev == wilderness_block){
+                    wilderness_block = (MallocMetadata*)((char*)prev + size_meta_data() + size);
+                }
+            }
+            memmove(meta_to_data(prev), meta_to_data(block), block->size);
+            return meta_to_data(prev);
+        }
+        else if(block == wilderness_block){ // 1.b with wilderness
+            RemoveBlock(block);
+            RemoveBlock(prev);
+            insertBlock(block->size + prev->size + size_meta_data(), prev);
+            wilderness_block = prev;
+            sbrk(size - wilderness_block->size);
+            wilderness_block->size += size - wilderness_block->size;
+            memmove(meta_to_data(prev), meta_to_data(block), block->size);
+            return meta_to_data(prev);
+        }
+    }
+    else if(block == wilderness_block){  // 1.c
+        sbrk(size - wilderness_block->size);
+        wilderness_block->size += size - wilderness_block->size;
+        return meta_to_data(wilderness_block);
+    }
+
+    if(next != NULL){ // 1.d
+        if(block->size + next->size + size_meta_data() >= size){
+            RemoveBlock(block);
+            RemoveBlock(next);
+            insertBlock(block->size + next->size + size_meta_data(), block);
+            if(next == wilderness_block){
+                wilderness_block = block;
+            }
+            if(block->size - size >= 128){
+                SplitAndInsert(size, block);
+                // After splitting, we check if we need to update the wilderness_block (that we change to prev in the last if)
+                if(block == wilderness_block){
+                    wilderness_block = (MallocMetadata*)((char*)block + size_meta_data() + size);
+                }
+            }
+            return meta_to_data(block);
+        }
+    }
+
+    if(prev != NULL && next != NULL){ // 1.e
+        if(block->size + prev->size + next->size + 2*size_meta_data() >= size){
+            UnionAndInsert(block, next, prev, 0);
+            memmove(meta_to_data(prev), meta_to_data(block), block->size);
+            if(prev->size - size >= 128){
+                SplitAndInsert(size, prev);
+                // After splitting, we check if we need to update the wilderness_block (that we change to prev in the last if)
+                if(prev == wilderness_block){
+                    wilderness_block = (MallocMetadata*)((char*)prev + size_meta_data() + size);
+                }
+            }
+            return meta_to_data(prev);
+        }
+    }
+    
+    if(next != NULL && next == wilderness_block){ // 1.f
+        if(prev != NULL){ // 1.f1
+            UnionAndInsert(block, next, prev, 0);
+            memmove(meta_to_data(prev), meta_to_data(block), block->size);
+
+            wilderness_block = prev;
+            sbrk(size - wilderness_block->size);
+            wilderness_block->size += size - wilderness_block->size;
+            return meta_to_data(wilderness_block);
+        }
+        else{ // 1.f2
+            UnionAndInsert(block, next, NULL, 0);
+
+            wilderness_block = block;
+            sbrk(size - wilderness_block->size);
+            wilderness_block->size += size - wilderness_block->size;
+            return meta_to_data(wilderness_block);
+        }
+    }
+
+    void* new_block = smalloc(size); // g + h
+    if(new_block == NULL){
+        return NULL;
+    }
+
+    memmove(new_block, block, data_to_meta(block)->size);
+    sfree(block);
+
+    return new_block;
+}
+
+
+void* AllocedBlocksList::ReallocateLargeBlock(MallocMetadata* oldblock, size_t size){
+    VerifyCookieCode(oldblock);
+    if(oldblock->size == size){
+        return meta_to_data(oldblock);
+    }
+
+    void* new_block = insertLargeBlock(size);
+    if(new_block == NULL){
+        return NULL;
+    }
+
+    memmove(new_block, oldblock, size);
+    munmap(oldblock, oldblock->size + size_meta_data());
+
+    return new_block;
 }
 
 size_t AllocedBlocksList::num_free_blocks() {
@@ -282,6 +489,7 @@ size_t AllocedBlocksList::num_free_blocks() {
 
     MallocMetadata* temp = this->head;
     while (temp != NULL) {
+        VerifyCookieCode(temp);
         if(temp->is_free == 1) {
             free_blocks++;
         }
@@ -295,6 +503,7 @@ size_t AllocedBlocksList::num_free_bytes() {
 
     MallocMetadata* temp = this->head;
     while (temp != NULL) {
+        VerifyCookieCode(temp);
         if(temp->is_free == 1) {
             free_bytes += temp->size;
         }
@@ -308,9 +517,18 @@ size_t AllocedBlocksList::num_allocated_blocks() {
 
     MallocMetadata* temp = this->head;
     while (temp != NULL) {
+        VerifyCookieCode(temp);
         alloced_blocks++;
         temp = temp->next;
     }
+
+    temp = this->head_large;
+    while (temp != NULL) {
+        VerifyCookieCode(temp);
+        alloced_blocks++;
+        temp = temp->next;
+    }
+    
     return alloced_blocks;
 }
 
@@ -319,9 +537,18 @@ size_t AllocedBlocksList::num_allocated_bytes() {
 
     MallocMetadata* temp = this->head;
     while (temp != NULL) {
+        VerifyCookieCode(temp);
         alloced_bytes += temp->size;
         temp = temp->next;
     }
+
+    temp = this->head_large;
+    while (temp != NULL) {
+        VerifyCookieCode(temp);
+        alloced_bytes += temp->size;
+        temp = temp->next;
+    }
+
     return alloced_bytes;
 }
 
@@ -347,8 +574,8 @@ void* smalloc(size_t size){
         return NULL;
     }
 
-    if (size > LARGE_BLOCK) {
-        return insertLargeBlock(size);
+    if (size >= LARGE_BLOCK) {
+        return allocatedBlocks.insertLargeBlock(size);
     }
 
     void* new_block = allocatedBlocks.allocateFreeBlock(size);
@@ -356,8 +583,8 @@ void* smalloc(size_t size){
     if(new_block == NULL){
         new_block = allocatedBlocks.insertBlock(size);
     }
-    else if (AllocedBlocksList::data_to_meta(new_block)->size - size >= 128) {
-        new_block = allocatedBlocks.SplitAndInsert(size, AllocedBlocksList::data_to_meta(new_block));
+    else if (allocatedBlocks.data_to_meta(new_block)->size - size >= 128) {
+        new_block = allocatedBlocks.SplitAndInsert(size, allocatedBlocks.data_to_meta(new_block));
     }
 
     return new_block;
@@ -390,21 +617,14 @@ void* srealloc(void* oldp, size_t size){
     if(size == 0 || size > MAX_SIZE){
         return NULL;
     }
-    MallocMetadata* meta_data_ptr = AllocedBlocksList::data_to_meta(oldp);
 
-    if(meta_data_ptr->size >= size){
-        return oldp;
+    MallocMetadata* meta_data_ptr = allocatedBlocks.data_to_meta(oldp);
+    if(meta_data_ptr->size >= LARGE_BLOCK){
+        return allocatedBlocks.ReallocateLargeBlock(meta_data_ptr, size);
     }
-
-    void* new_block = smalloc(size);
-    if(new_block == NULL){
-        return NULL;
+    else{
+        return allocatedBlocks.ReallocateRegularBlock(meta_data_ptr, size);
     }
-
-    memmove(new_block, oldp, size);
-    sfree(oldp);
-
-    return new_block;
 }
 
 size_t _num_free_blocks(){
@@ -434,15 +654,20 @@ size_t _size_meta_data(){
 int main(){
     void *base = sbrk(0);
     MallocMetadata *a = (MallocMetadata *)smalloc(16);
-    MallocMetadata *b = (MallocMetadata *)smalloc(16);
-    MallocMetadata *c = (MallocMetadata *)smalloc(16);
+    MallocMetadata *b = (MallocMetadata *)smalloc(32);
+    MallocMetadata *c = (MallocMetadata *)smalloc(64);
     sfree(c);
-    MallocMetadata *d = (MallocMetadata *)smalloc(32);
-    MallocMetadata *e = (MallocMetadata *)smalloc(32);
+    MallocMetadata *d = (MallocMetadata *)smalloc(128);
+    MallocMetadata *e = (MallocMetadata *)smalloc(64);
+    MallocMetadata *f = (MallocMetadata *)smalloc(128 * 1024);
+    MallocMetadata *g = (MallocMetadata *)smalloc(129 * 1024);
+    sfree(f);
+    sfree(g);
+    sfree(e);
+    sfree(d);
     sfree(a);
     sfree(b);
-    sfree(d);
-    sfree(e);
+    
     // MallocMetadata *g = (MallocMetadata *)smalloc(128);
 
     // sfree(c);
