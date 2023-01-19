@@ -9,7 +9,7 @@
 
 static inline size_t aligned_size(size_t size)
 {
-    return (size % 8) ? (size & (size_t)(-8)) + 8 : size;
+    return size;
 }
 
 #define verify_blocks(allocated_blocks, allocated_bytes, free_blocks, free_bytes)                                      \

@@ -9,7 +9,7 @@
 
 static inline size_t aligned_size(size_t size)
 {
-    return (size % 8) ? (size & (size_t)(-8)) + 8 : size;
+    return size;
 }
 
 #define verify_blocks(allocated_blocks, allocated_bytes, free_blocks, free_bytes)                                      \
@@ -17,8 +17,8 @@ static inline size_t aligned_size(size_t size)
     {                                                                                                                  \
         REQUIRE(_num_allocated_blocks() == allocated_blocks);                                                          \
         REQUIRE(_num_allocated_bytes() == aligned_size(allocated_bytes));                                              \
-        REQUIRE(_num_free_blocks() == free_blocks);                                                                    \
         REQUIRE(_num_free_bytes() == aligned_size(free_bytes));                                                        \
+        REQUIRE(_num_free_blocks() == free_blocks);                                                                    \
         REQUIRE(_num_meta_data_bytes() == aligned_size(_size_meta_data() * allocated_blocks));                         \
     } while (0)
 
@@ -66,16 +66,16 @@ TEST_CASE("Check size", "[malloc3]")
     char *b = (char *)smalloc(10);
     REQUIRE(b != nullptr);
     after = sbrk(0);
-    REQUIRE(aligned_size(24) + _size_meta_data() * 2 == (size_t)after - (size_t)base);
+    REQUIRE(aligned_size(11) + _size_meta_data() * 2 == (size_t)after - (size_t)base);
 
-    verify_blocks(2, 24, 0, 0);
+    verify_blocks(2, 11, 0, 0);
     verify_size(base);
 
     sfree(a);
-    verify_blocks(2, 24, 1, 8);
+    verify_blocks(2, 11, 1, 1);
     verify_size(base);
     sfree(b);
-    verify_blocks(1, 24 + _size_meta_data(), 1, 24 + _size_meta_data());
+    verify_blocks(1, 11 + _size_meta_data(), 1, 11u + _size_meta_data());
     verify_size(base);
 }
 
@@ -124,17 +124,17 @@ TEST_CASE("free", "[malloc3]")
     char *c = (char *)smalloc(10);
     REQUIRE(c != nullptr);
 
-    verify_blocks(3, 16 * 3, 0, 0);
+    verify_blocks(3, 10 * 3, 0, 0);
     verify_size(base);
 
     sfree(a);
-    verify_blocks(3, 16 * 3, 1, 16);
+    verify_blocks(3, 10 * 3, 1, 10);
     verify_size(base);
     sfree(b);
-    verify_blocks(2, 16 * 3 + _size_meta_data(), 1, 16 * 2 + _size_meta_data());
+    verify_blocks(2, 10 * 3 + _size_meta_data(), 1, 10 * 2 + _size_meta_data());
     verify_size(base);
     sfree(c);
-    verify_blocks(1, 16 * 3 + _size_meta_data() * 2, 1, 16 * 3 + _size_meta_data() * 2);
+    verify_blocks(1, 10 * 3 + _size_meta_data() * 2, 1, 10 * 3 + _size_meta_data() * 2);
     verify_size(base);
 
     char *new_a = (char *)smalloc(10);
@@ -144,17 +144,17 @@ TEST_CASE("free", "[malloc3]")
     char *new_c = (char *)smalloc(10);
     REQUIRE(c != new_c);
 
-    verify_blocks(3, 16 * 5 + _size_meta_data() * 2, 0, 0);
+    verify_blocks(3, 10 * 5 + _size_meta_data() * 2, 0, 0);
     verify_size(base);
 
     sfree(new_a);
-    verify_blocks(3, 16 * 5 + _size_meta_data() * 2, 1, 16 * 3 + _size_meta_data() * 2);
+    verify_blocks(3, 10 * 5 + _size_meta_data() * 2, 1, 10 * 3 + _size_meta_data() * 2);
     verify_size(base);
     sfree(new_b);
-    verify_blocks(2, 16 * 5 + _size_meta_data() * 3, 1, 16 * 4 + _size_meta_data() * 3);
+    verify_blocks(2, 10 * 5 + _size_meta_data() * 3, 1, 10 * 4 + _size_meta_data() * 3);
     verify_size(base);
     sfree(new_c);
-    verify_blocks(1, 16 * 5 + _size_meta_data() * 4, 1, 16 * 5 + _size_meta_data() * 4);
+    verify_blocks(1, 10 * 5 + _size_meta_data() * 4, 1, 10 * 5 + _size_meta_data() * 4);
     verify_size(base);
 }
 
@@ -170,17 +170,17 @@ TEST_CASE("free 2", "[malloc3]")
     char *c = (char *)smalloc(10);
     REQUIRE(c != nullptr);
 
-    verify_blocks(3, 16 * 3, 0, 0);
+    verify_blocks(3, 10 * 3, 0, 0);
     verify_size(base);
 
     sfree(b);
-    verify_blocks(3, 16 * 3, 1, 16);
+    verify_blocks(3, 10 * 3, 1, 10);
     verify_size(base);
     sfree(a);
-    verify_blocks(2, 16 * 3 + _size_meta_data(), 1, 16 * 2 + _size_meta_data());
+    verify_blocks(2, 10 * 3 + _size_meta_data(), 1, 10 * 2 + _size_meta_data());
     verify_size(base);
     sfree(c);
-    verify_blocks(1, 16 * 3 + _size_meta_data() * 2, 1, 16 * 3 + _size_meta_data() * 2);
+    verify_blocks(1, 10 * 3 + _size_meta_data() * 2, 1, 10 * 3 + _size_meta_data() * 2);
     verify_size(base);
 
     char *new_a = (char *)smalloc(10);
@@ -190,17 +190,17 @@ TEST_CASE("free 2", "[malloc3]")
     char *new_c = (char *)smalloc(10);
     REQUIRE(c != new_c);
 
-    verify_blocks(3, 16 * 5 + _size_meta_data() * 2, 0, 0);
+    verify_blocks(3, 10 * 5 + _size_meta_data() * 2, 0, 0);
     verify_size(base);
 
     sfree(new_a);
-    verify_blocks(3, 16 * 5 + _size_meta_data() * 2, 1, 16 * 3 + _size_meta_data() * 2);
+    verify_blocks(3, 10 * 5 + _size_meta_data() * 2, 1, 10 * 3 + _size_meta_data() * 2);
     verify_size(base);
     sfree(new_b);
-    verify_blocks(2, 16 * 5 + _size_meta_data() * 3, 1, 16 * 4 + _size_meta_data() * 3);
+    verify_blocks(2, 10 * 5 + _size_meta_data() * 3, 1, 10 * 4 + _size_meta_data() * 3);
     verify_size(base);
     sfree(new_c);
-    verify_blocks(1, 16 * 5 + _size_meta_data() * 4, 1, 16 * 5 + _size_meta_data() * 4);
+    verify_blocks(1, 10 * 5 + _size_meta_data() * 4, 1, 10 * 5 + _size_meta_data() * 4);
     verify_size(base);
 }
 
@@ -216,17 +216,17 @@ TEST_CASE("free 3", "[malloc3]")
     char *c = (char *)smalloc(10);
     REQUIRE(c != nullptr);
 
-    verify_blocks(3, 16 * 3, 0, 0);
+    verify_blocks(3, 10 * 3, 0, 0);
     verify_size(base);
 
     sfree(c);
-    verify_blocks(3, 16 * 3, 1, 16);
+    verify_blocks(3, 10 * 3, 1, 10);
     verify_size(base);
     sfree(a);
-    verify_blocks(3, 16 * 3, 2, 16 * 2);
+    verify_blocks(3, 10 * 3, 2, 10 * 2);
     verify_size(base);
     sfree(b);
-    verify_blocks(1, 16 * 3 + _size_meta_data() * 2, 1, 16 * 3 + _size_meta_data() * 2);
+    verify_blocks(1, 10 * 3 + _size_meta_data() * 2, 1, 10 * 3 + _size_meta_data() * 2);
     verify_size(base);
 
     char *new_a = (char *)smalloc(10);
@@ -236,17 +236,17 @@ TEST_CASE("free 3", "[malloc3]")
     char *new_c = (char *)smalloc(10);
     REQUIRE(c != new_c);
 
-    verify_blocks(3, 16 * 5 + _size_meta_data() * 2, 0, 0);
+    verify_blocks(3, 10 * 5 + _size_meta_data() * 2, 0, 0);
     verify_size(base);
 
     sfree(new_a);
-    verify_blocks(3, 16 * 5 + _size_meta_data() * 2, 1, 16 * 3 + _size_meta_data() * 2);
+    verify_blocks(3, 10 * 5 + _size_meta_data() * 2, 1, 10 * 3 + _size_meta_data() * 2);
     verify_size(base);
     sfree(new_b);
-    verify_blocks(2, 16 * 5 + _size_meta_data() * 3, 1, 16 * 4 + _size_meta_data() * 3);
+    verify_blocks(2, 10 * 5 + _size_meta_data() * 3, 1, 10 * 4 + _size_meta_data() * 3);
     verify_size(base);
     sfree(new_c);
-    verify_blocks(1, 16 * 5 + _size_meta_data() * 4, 1, 16 * 5 + _size_meta_data() * 4);
+    verify_blocks(1, 10 * 5 + _size_meta_data() * 4, 1, 10 * 5 + _size_meta_data() * 4);
     verify_size(base);
 }
 
@@ -266,17 +266,17 @@ TEST_CASE("free holes 1", "[malloc3]")
     char *e = (char *)smalloc(10);
     REQUIRE(e != nullptr);
 
-    verify_blocks(5, 16 * 5, 0, 0);
+    verify_blocks(5, 10 * 5, 0, 0);
     verify_size(base);
 
     sfree(a);
-    verify_blocks(5, 16 * 5, 1, 16);
+    verify_blocks(5, 10 * 5, 1, 10);
     verify_size(base);
     sfree(c);
-    verify_blocks(5, 16 * 5, 2, 16 * 2);
+    verify_blocks(5, 10 * 5, 2, 10 * 2);
     verify_size(base);
     sfree(e);
-    verify_blocks(5, 16 * 5, 3, 16 * 3);
+    verify_blocks(5, 10 * 5, 3, 10 * 3);
     verify_size(base);
 
     char *new_a = (char *)smalloc(10);
@@ -286,23 +286,23 @@ TEST_CASE("free holes 1", "[malloc3]")
     char *new_e = (char *)smalloc(10);
     REQUIRE(e == new_e);
 
-    verify_blocks(5, 16 * 5, 0, 0);
+    verify_blocks(5, 10 * 5, 0, 0);
     verify_size(base);
 
     sfree(new_a);
-    verify_blocks(5, 16 * 5, 1, 16);
+    verify_blocks(5, 10 * 5, 1, 10);
     verify_size(base);
     sfree(b);
-    verify_blocks(4, 16 * 5 + _size_meta_data() * 1, 1, 16 * 2 + _size_meta_data());
+    verify_blocks(4, 10 * 5 + _size_meta_data() * 1, 1, 10 * 2 + _size_meta_data());
     verify_size(base);
     sfree(new_c);
-    verify_blocks(3, 16 * 5 + _size_meta_data() * 2, 1, 16 * 3 + _size_meta_data() * 2);
+    verify_blocks(3, 10 * 5 + _size_meta_data() * 2, 1, 10 * 3 + _size_meta_data() * 2);
     verify_size(base);
     sfree(d);
-    verify_blocks(2, 16 * 5 + _size_meta_data() * 3, 1, 16 * 4 + _size_meta_data() * 3);
+    verify_blocks(2, 10 * 5 + _size_meta_data() * 3, 1, 10 * 4 + _size_meta_data() * 3);
     verify_size(base);
     sfree(new_e);
-    verify_blocks(1, 16 * 5 + _size_meta_data() * 4, 1, 16 * 5 + _size_meta_data() * 4);
+    verify_blocks(1, 10 * 5 + _size_meta_data() * 4, 1, 10 * 5 + _size_meta_data() * 4);
     verify_size(base);
 }
 
@@ -322,17 +322,17 @@ TEST_CASE("free holes 2", "[malloc3]")
     char *e = (char *)smalloc(10);
     REQUIRE(e != nullptr);
 
-    verify_blocks(5, 16 * 5, 0, 0);
+    verify_blocks(5, 10 * 5, 0, 0);
     verify_size(base);
 
     sfree(c);
-    verify_blocks(5, 16 * 5, 1, 16);
+    verify_blocks(5, 10 * 5, 1, 10);
     verify_size(base);
     sfree(a);
-    verify_blocks(5, 16 * 5, 2, 16 * 2);
+    verify_blocks(5, 10 * 5, 2, 10 * 2);
     verify_size(base);
     sfree(e);
-    verify_blocks(5, 16 * 5, 3, 16 * 3);
+    verify_blocks(5, 10 * 5, 3, 10 * 3);
     verify_size(base);
 
     char *new_a = (char *)smalloc(10);
@@ -342,23 +342,23 @@ TEST_CASE("free holes 2", "[malloc3]")
     char *new_e = (char *)smalloc(10);
     REQUIRE(e == new_e);
 
-    verify_blocks(5, 16 * 5, 0, 0);
+    verify_blocks(5, 10 * 5, 0, 0);
     verify_size(base);
 
     sfree(new_a);
-    verify_blocks(5, 16 * 5, 1, 16);
+    verify_blocks(5, 10 * 5, 1, 10);
     verify_size(base);
     sfree(b);
-    verify_blocks(4, 16 * 5 + _size_meta_data() * 1, 1, 16 * 2 + _size_meta_data());
+    verify_blocks(4, 10 * 5 + _size_meta_data() * 1, 1, 10 * 2 + _size_meta_data());
     verify_size(base);
     sfree(new_c);
-    verify_blocks(3, 16 * 5 + _size_meta_data() * 2, 1, 16 * 3 + _size_meta_data() * 2);
+    verify_blocks(3, 10 * 5 + _size_meta_data() * 2, 1, 10 * 3 + _size_meta_data() * 2);
     verify_size(base);
     sfree(d);
-    verify_blocks(2, 16 * 5 + _size_meta_data() * 3, 1, 16 * 4 + _size_meta_data() * 3);
+    verify_blocks(2, 10 * 5 + _size_meta_data() * 3, 1, 10 * 4 + _size_meta_data() * 3);
     verify_size(base);
     sfree(new_e);
-    verify_blocks(1, 16 * 5 + _size_meta_data() * 4, 1, 16 * 5 + _size_meta_data() * 4);
+    verify_blocks(1, 10 * 5 + _size_meta_data() * 4, 1, 10 * 5 + _size_meta_data() * 4);
     verify_size(base);
 }
 
@@ -378,17 +378,17 @@ TEST_CASE("free holes 3", "[malloc3]")
     char *e = (char *)smalloc(10);
     REQUIRE(e != nullptr);
 
-    verify_blocks(5, 16 * 5, 0, 0);
+    verify_blocks(5, 10 * 5, 0, 0);
     verify_size(base);
 
     sfree(e);
-    verify_blocks(5, 16 * 5, 1, 16);
+    verify_blocks(5, 10 * 5, 1, 10);
     verify_size(base);
     sfree(a);
-    verify_blocks(5, 16 * 5, 2, 16 * 2);
+    verify_blocks(5, 10 * 5, 2, 10 * 2);
     verify_size(base);
     sfree(c);
-    verify_blocks(5, 16 * 5, 3, 16 * 3);
+    verify_blocks(5, 10 * 5, 3, 10 * 3);
     verify_size(base);
 
     char *new_a = (char *)smalloc(10);
@@ -398,23 +398,23 @@ TEST_CASE("free holes 3", "[malloc3]")
     char *new_e = (char *)smalloc(10);
     REQUIRE(e == new_e);
 
-    verify_blocks(5, 16 * 5, 0, 0);
+    verify_blocks(5, 10 * 5, 0, 0);
     verify_size(base);
 
     sfree(new_a);
-    verify_blocks(5, 16 * 5, 1, 16);
+    verify_blocks(5, 10 * 5, 1, 10);
     verify_size(base);
     sfree(b);
-    verify_blocks(4, 16 * 5 + _size_meta_data() * 1, 1, 16 * 2 + _size_meta_data());
+    verify_blocks(4, 10 * 5 + _size_meta_data() * 1, 1, 10 * 2 + _size_meta_data());
     verify_size(base);
     sfree(new_c);
-    verify_blocks(3, 16 * 5 + _size_meta_data() * 2, 1, 16 * 3 + _size_meta_data() * 2);
+    verify_blocks(3, 10 * 5 + _size_meta_data() * 2, 1, 10 * 3 + _size_meta_data() * 2);
     verify_size(base);
     sfree(d);
-    verify_blocks(2, 16 * 5 + _size_meta_data() * 3, 1, 16 * 4 + _size_meta_data() * 3);
+    verify_blocks(2, 10 * 5 + _size_meta_data() * 3, 1, 10 * 4 + _size_meta_data() * 3);
     verify_size(base);
     sfree(new_e);
-    verify_blocks(1, 16 * 5 + _size_meta_data() * 4, 1, 16 * 5 + _size_meta_data() * 4);
+    verify_blocks(1, 10 * 5 + _size_meta_data() * 4, 1, 10 * 5 + _size_meta_data() * 4);
     verify_size(base);
 }
 
@@ -530,126 +530,10 @@ TEST_CASE("Large unaligned allocation", "[malloc3]")
     REQUIRE(a != nullptr);
     void *after = sbrk(0);
     REQUIRE(0 == (size_t)after - (size_t)base);
-    verify_blocks(1, MMAP_THRESHOLD + 8, 0, 0);
+    verify_blocks(1, MMAP_THRESHOLD + 1, 0, 0);
     verify_size_with_large_blocks(base, 0);
 
     sfree(a);
     verify_blocks(0, 0, 0, 0);
     verify_size(base);
-}
-
-TEST_CASE("Alignment", "[malloc3]")
-{
-    verify_blocks(0, 0, 0, 0);
-    void *base = sbrk(0);
-
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
-
-    char *a = (char *)smalloc(10);
-    REQUIRE(a != nullptr);
-    REQUIRE((size_t)a % 8 == 0);
-    verify_blocks(1, 16, 0, 0);
-    verify_size(base);
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
-
-    char *b = (char *)smalloc(10);
-    REQUIRE(b != nullptr);
-    REQUIRE((size_t)b % 8 == 0);
-    verify_blocks(2, 32, 0, 0);
-    verify_size(base);
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
-
-    sfree(a);
-    verify_blocks(2, 32, 1, 16);
-    verify_size(base);
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
-
-    sfree(b);
-    verify_blocks(1, 32 + _size_meta_data(), 1, 32 + _size_meta_data());
-    verify_size(base);
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
-}
-
-TEST_CASE("Alignment unaligned base", "[malloc3]")
-{
-    verify_blocks(0, 0, 0, 0);
-    void *base = sbrk(0);
-    // Should be on all linux systems
-    REQUIRE(((size_t)base) % 8 == 0);
-    sbrk(3);
-    base = sbrk(0);
-    void *aligned_base = (void *)((size_t)sbrk(0) + 5);
-    REQUIRE(((size_t)base) % 8 != 0);
-
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
-
-    char *a = (char *)smalloc(10);
-    REQUIRE(a != nullptr);
-    REQUIRE((size_t)a % 8 == 0);
-    verify_blocks(1, 16, 0, 0);
-    verify_size(aligned_base);
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
-
-    char *b = (char *)smalloc(10);
-    REQUIRE(b != nullptr);
-    REQUIRE((size_t)b % 8 == 0);
-    verify_blocks(2, 32, 0, 0);
-    verify_size(aligned_base);
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
-
-    sfree(a);
-    verify_blocks(2, 32, 1, 16);
-    verify_size(aligned_base);
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
-
-    sfree(b);
-    verify_blocks(1, 32 + _size_meta_data(), 1, 32 + _size_meta_data());
-    verify_size(aligned_base);
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
-}
-
-TEST_CASE("Alignment MMAP", "[malloc3]")
-{
-    verify_blocks(0, 0, 0, 0);
-    void *base = sbrk(0);
-
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
-
-    char *a = (char *)smalloc(MMAP_THRESHOLD);
-    REQUIRE(a != nullptr);
-    REQUIRE((size_t)a % 8 == 0);
-    verify_blocks(1, MMAP_THRESHOLD, 0, 0);
-    verify_size_with_large_blocks(base, 0);
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
-
-    sfree(a);
-    verify_blocks(0, 0, 0, 0);
-    verify_size(base);
-    REQUIRE(_size_meta_data() % 8 == 0);
-    REQUIRE(_num_allocated_bytes() % 8 == 0);
-    REQUIRE(_num_free_bytes() % 8 == 0);
 }

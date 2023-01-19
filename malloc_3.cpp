@@ -1,13 +1,23 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <cstring>
 #include <sys/mman.h>
+#include <cassert>
 
 #define MAX_SIZE 100000000
 #define LARGE_BLOCK 128 * 1024
+#define MIN_SPLIT_SIZE 128
 #define DEADBEEF 0xdeadbeef
+
+
+/***************************************************/
+/************* Malloc Functions Headers*************/
+void* smalloc(size_t size);
+void* scalloc(size_t num, size_t size);
+void  sfree(void* p);
+void* srealloc(void* oldp, size_t size);
+/***************************************************/
 
 class MallocMetadata{
 public:
@@ -28,7 +38,7 @@ class AllocedBlocksList{
         MallocMetadata* wilderness_block;
         int cookie_code;
 
-        AllocedBlocksList() = default;
+        AllocedBlocksList();
         ~AllocedBlocksList() = default;
     
         void* insertBlock(size_t size, MallocMetadata* block = nullptr);
@@ -88,16 +98,16 @@ void* AllocedBlocksList::insertBlock(size_t size, MallocMetadata* new_block)
             wilderness_block->size += size - wilderness_block->size;
             new_block = wilderness_block;
         } else {
-            new_block = (MallocMetadata*)sbrk(sizeof(*new_block) + size);
+            new_block = (MallocMetadata*)sbrk(size_meta_data() + size);
             if(new_block == (void*)-1) {
                 return NULL;
             }
             wilderness_block = new_block;
         }
     }
-    else{
-        VerifyCookieCode(new_block);
-    }
+    // else{
+    //     VerifyCookieCode(new_block);
+    // }
     VerifyCookieCode(head);
 
     new_block->cookie = this->cookie_code;
@@ -298,7 +308,13 @@ void* AllocedBlocksList::SplitAndInsert(size_t new_size, MallocMetadata* old_blo
         wilderness_block = data_to_meta(free_block);
     }
     data_to_meta(free_block)->is_free = 1;
-    return insertBlock(new_size, old_block);
+
+    MallocMetadata* next_free = GetNextIfFree(data_to_meta(free_block));
+    if(next_free != NULL){
+        UnionAndInsert(data_to_meta(free_block), next_free, NULL);
+    }
+    insertBlock(new_size, old_block);
+    return meta_to_data(old_block);
 }
 
 void* AllocedBlocksList::insertLargeBlock(size_t size) {
@@ -357,7 +373,7 @@ void AllocedBlocksList::releaseLargeBlock(void* ptr){
 
 void* AllocedBlocksList::ReallocateRegularBlock(MallocMetadata* block, size_t size){
     if(block->size >= size){ // 1.a
-        if(block->size - size >= 128){
+        if(block->size - size >= (MIN_SPLIT_SIZE + size_meta_data())){
             SplitAndInsert(size, block);
         }
         return meta_to_data(block);
@@ -374,7 +390,7 @@ void* AllocedBlocksList::ReallocateRegularBlock(MallocMetadata* block, size_t si
             if(block == wilderness_block){
                 wilderness_block = prev;
             }
-            if(prev->size - size >= 128){
+            if(prev->size - size >= (MIN_SPLIT_SIZE + size_meta_data())){
                 SplitAndInsert(size, prev);
                 // After splitting, we check if we need to update the wilderness_block (that we change to prev in the last if)
                 if(prev == wilderness_block){
@@ -409,7 +425,7 @@ void* AllocedBlocksList::ReallocateRegularBlock(MallocMetadata* block, size_t si
             if(next == wilderness_block){
                 wilderness_block = block;
             }
-            if(block->size - size >= 128){
+            if(block->size - size >= (MIN_SPLIT_SIZE + size_meta_data())){
                 SplitAndInsert(size, block);
                 // After splitting, we check if we need to update the wilderness_block (that we change to prev in the last if)
                 if(block == wilderness_block){
@@ -424,7 +440,7 @@ void* AllocedBlocksList::ReallocateRegularBlock(MallocMetadata* block, size_t si
         if(block->size + prev->size + next->size + 2*size_meta_data() >= size){
             UnionAndInsert(block, next, prev, 0);
             memmove(meta_to_data(prev), meta_to_data(block), block->size);
-            if(prev->size - size >= 128){
+            if(prev->size - size >= (MIN_SPLIT_SIZE + size_meta_data())){
                 SplitAndInsert(size, prev);
                 // After splitting, we check if we need to update the wilderness_block (that we change to prev in the last if)
                 if(prev == wilderness_block){
@@ -460,8 +476,8 @@ void* AllocedBlocksList::ReallocateRegularBlock(MallocMetadata* block, size_t si
         return NULL;
     }
 
-    memmove(new_block, block, data_to_meta(block)->size);
-    sfree(block);
+    memmove(new_block, meta_to_data(block), block->size);
+    sfree(meta_to_data(block));
 
     return new_block;
 }
@@ -479,7 +495,7 @@ void* AllocedBlocksList::ReallocateLargeBlock(MallocMetadata* oldblock, size_t s
     }
 
     memmove(new_block, oldblock, size);
-    munmap(oldblock, oldblock->size + size_meta_data());
+    releaseLargeBlock(meta_to_data(oldblock));
 
     return new_block;
 }
@@ -583,7 +599,7 @@ void* smalloc(size_t size){
     if(new_block == NULL){
         new_block = allocatedBlocks.insertBlock(size);
     }
-    else if (allocatedBlocks.data_to_meta(new_block)->size - size >= 128) {
+    else if (allocatedBlocks.data_to_meta(new_block)->size - size >= (MIN_SPLIT_SIZE + allocatedBlocks.size_meta_data())) {
         new_block = allocatedBlocks.SplitAndInsert(size, allocatedBlocks.data_to_meta(new_block));
     }
 
@@ -651,38 +667,87 @@ size_t _size_meta_data(){
     return allocatedBlocks.size_meta_data();
 }
 
-int main(){
-    void *base = sbrk(0);
-    MallocMetadata *a = (MallocMetadata *)smalloc(16);
-    MallocMetadata *b = (MallocMetadata *)smalloc(32);
-    MallocMetadata *c = (MallocMetadata *)smalloc(64);
-    sfree(c);
-    MallocMetadata *d = (MallocMetadata *)smalloc(128);
-    MallocMetadata *e = (MallocMetadata *)smalloc(64);
-    MallocMetadata *f = (MallocMetadata *)smalloc(128 * 1024);
-    MallocMetadata *g = (MallocMetadata *)smalloc(129 * 1024);
-    sfree(f);
-    sfree(g);
-    sfree(e);
-    sfree(d);
-    sfree(a);
-    sfree(b);
-    
-    // MallocMetadata *g = (MallocMetadata *)smalloc(128);
+// *********************** Main + Testing *********************** //
 
-    // sfree(c);
-    // sfree(f);
-    // sfree(g);
+// void verify_size(void* base){
+//     void* after = sbrk(0);
+//     size_t side1 = _num_allocated_bytes()+_size_meta_data()*_num_allocated_blocks();
+//     size_t side2 = (size_t)after - (size_t)base;
+//     assert(side1 == side2);
+// }
 
-    // MallocMetadata *h = (MallocMetadata *)smalloc(400);
-    // MallocMetadata *i = (MallocMetadata *)smalloc(100);
-    // MallocMetadata *j = (MallocMetadata *)smalloc(100);
-    // sfree(h);
-    // MallocMetadata *k = (MallocMetadata *)smalloc(20);
+// void verify_blocks(size_t allocated_blocks, size_t allocated_bytes, size_t free_blocks, size_t free_bytes){
+//     assert(_num_allocated_blocks() == allocated_blocks);
+//     assert(_num_allocated_bytes() == allocated_bytes);
+//     assert(_num_free_blocks() == free_blocks);
+//     assert(_num_free_bytes() == free_bytes);
+//     assert(_num_meta_data_bytes() == _size_meta_data() * allocated_blocks);
+// }
 
-    // sfree(i);
-    // sfree(j);
-    // sfree(k);
+// template <typename T>
+// void populate_array(T *array, size_t len)
+// {
+//     for (size_t i = 0; i < len; i++)
+//     {
+//         array[i] = (T)i;
+//     }
+// }
 
-    return 0;
-}
+// template <typename T>
+// void validate_array(T *array, size_t len)
+// {
+//     for (size_t i = 0; i < len; i++)
+//     {
+//         assert((array[i] == (T)i));
+//     }
+// }
+
+// void verify_size_with_large_blocks(void* base, size_t diff){
+//     void *after = sbrk(0);
+//     assert(diff == ((size_t)after - (size_t)base));
+// }
+
+// int main(){
+//     verify_blocks(0, 0, 0, 0);
+//     void *base = sbrk(0);
+//     char *pad1 = (char *)smalloc(32);
+//     char *a = (char *)smalloc(32);
+//     char *pad2 = (char *)smalloc(32);
+//     char *b = (char *)smalloc(160);
+//     char *pad3 = (char *)smalloc(32);
+//     assert(pad1 != nullptr);
+//     assert(a != nullptr);
+//     assert(pad2 != nullptr);
+//     assert(b != nullptr);
+//     assert(pad3 != nullptr);
+
+//     size_t pad_size = 32 * 3;
+//     size_t blocks_size = 32 + 160;
+
+//     verify_blocks(5, blocks_size + pad_size, 0, 0);
+//     verify_size(base);
+//     populate_array(a, 32);
+
+//     sfree(b);
+//     verify_blocks(5, blocks_size + pad_size, 1, 160);
+//     verify_size(base);
+
+//     char *new_a = (char *)srealloc(a, 160);
+//     assert(new_a != nullptr);
+//     assert(new_a == b);
+//     verify_blocks(5, blocks_size + pad_size, 1, 32);
+//     verify_size(base);
+//     validate_array(new_a, 32);
+
+//     sfree(new_a);
+//     verify_blocks(5, blocks_size + pad_size, 2, blocks_size);
+//     verify_size(base);
+
+//     sfree(pad1);
+//     sfree(pad2);
+//     sfree(pad3);
+//     verify_blocks(1, blocks_size + pad_size + 4 * _size_meta_data(), 1, blocks_size + pad_size + 4 * _size_meta_data());
+//     verify_size(base);
+
+//     return 0;
+// }

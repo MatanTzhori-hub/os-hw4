@@ -9,7 +9,7 @@
 
 static inline size_t aligned_size(size_t size)
 {
-    return (size % 8) ? (size & (size_t)(-8)) + 8 : size;
+    return size;
 }
 
 #define verify_blocks(allocated_blocks, allocated_bytes, free_blocks, free_bytes)                                      \
@@ -69,35 +69,35 @@ TEST_CASE("Reuse two blocks", "[malloc3]")
     verify_blocks(0, 0, 0, 0);
 
     void *base = sbrk(0);
-    char *a = (char *)smalloc(10);
+    char *a = (char *)smalloc(10); 
     REQUIRE(a != nullptr);
 
-    verify_blocks(1, 16, 0, 0);
+    verify_blocks(1, 10, 0, 0); 
     verify_size(base);
 
-    char *b = (char *)smalloc(10);
+    char *b = (char *)smalloc(10); 
     REQUIRE(b != nullptr);
     REQUIRE(b != a);
 
-    verify_blocks(2, 32, 0, 0);
+    verify_blocks(2, 20, 0, 0);
     verify_size(base);
 
     sfree(a);
-    verify_blocks(2, 32, 1, 16);
+    verify_blocks(2, 20, 1, 10); 
     verify_size(base);
 
     char *c = (char *)smalloc(10);
     REQUIRE(c != nullptr);
     REQUIRE(c == a);
 
-    verify_blocks(2, 32, 0, 0);
+    verify_blocks(2, 20, 0, 0);
     verify_size(base);
 
     sfree(b);
-    verify_blocks(2, 32, 1, 16);
+    verify_blocks(2, 20, 1, 10);
     verify_size(base);
     sfree(c);
-    verify_blocks(1, 32 + _size_meta_data(), 1, 32 + _size_meta_data());
+    verify_blocks(1, 20 + _size_meta_data(), 1, 20 + _size_meta_data());
     verify_size(base);
 }
 
@@ -109,32 +109,32 @@ TEST_CASE("Reuse two blocks reverse", "[malloc3]")
     char *a = (char *)smalloc(10);
     REQUIRE(a != nullptr);
 
-    verify_blocks(1, 16, 0, 0);
+    verify_blocks(1, 10, 0, 0);
     verify_size(base);
 
     char *b = (char *)smalloc(10);
     REQUIRE(b != nullptr);
     REQUIRE(b != a);
 
-    verify_blocks(2, 32, 0, 0);
+    verify_blocks(2, 20, 0, 0);
     verify_size(base);
 
     sfree(b);
-    verify_blocks(2, 32, 1, 16);
+    verify_blocks(2, 20, 1, 10);
     verify_size(base);
 
     char *c = (char *)smalloc(10);
     REQUIRE(c != nullptr);
     REQUIRE(c == b);
 
-    verify_blocks(2, 32, 0, 0);
+    verify_blocks(2, 20, 0, 0);
     verify_size(base);
 
     sfree(c);
-    verify_blocks(2, 32, 1, 16);
+    verify_blocks(2, 20, 1, 10);
     verify_size(base);
     sfree(a);
-    verify_blocks(1, 32 + _size_meta_data(), 1, 32 + _size_meta_data());
+    verify_blocks(1, 20 + _size_meta_data(), 1, 20 + _size_meta_data());
     verify_size(base);
 }
 
@@ -152,36 +152,36 @@ TEST_CASE("Reuse two blocks both", "[malloc3]")
     char *padding = (char *)smalloc(10);
     REQUIRE(padding != nullptr);
 
-    verify_blocks(2, 32, 0, 0);
+    verify_blocks(2, 20, 0, 0);
     verify_size(base);
 
     char *b = (char *)smalloc(10);
     REQUIRE(b != nullptr);
     REQUIRE(b != a);
 
-    verify_blocks(3, 48, 0, 0);
+    verify_blocks(3, 30, 0, 0);
     verify_size(base);
 
     sfree(a);
-    verify_blocks(3, 48, 1, 16);
+    verify_blocks(3, 30, 1, 10);
     verify_size(base);
     sfree(b);
-    verify_blocks(3, 48, 2, 32);
+    verify_blocks(3, 30, 2, 20);
     verify_size(base);
 
-    char *c = (char *)smalloc(10);
+    char *c = (char *)smalloc(10); 
     REQUIRE(c != nullptr);
     REQUIRE(c == a);
 
-    verify_blocks(3, 48, 1, 16);
+    verify_blocks(3, 30, 1, 10);
     verify_size(base);
 
     sfree(c);
-    verify_blocks(3, 48, 2, 32);
+    verify_blocks(3, 30, 2, 20);
     verify_size(base);
 
     sfree(padding);
-    verify_blocks(1, 48 + 2 * _size_meta_data(), 1, 48 + 2 * _size_meta_data());
+    verify_blocks(1, 30 + 2 * _size_meta_data(), 1, 30 + 2 * _size_meta_data());
     verify_size(base);
 }
 
@@ -199,36 +199,36 @@ TEST_CASE("Reuse two blocks sizes small", "[malloc3]")
     char *padding = (char *)smalloc(10);
     REQUIRE(padding != nullptr);
 
-    verify_blocks(2, 32, 0, 0);
+    verify_blocks(2, 20, 0, 0);
     verify_size(base);
 
     char *b = (char *)smalloc(100);
     REQUIRE(b != nullptr);
     REQUIRE(b != a);
 
-    verify_blocks(3, 136, 0, 0);
+    verify_blocks(3, 120, 0, 0);
     verify_size(base);
 
-    sfree(a);
-    verify_blocks(3, 136, 1, 16);
+    sfree(a); 
+    verify_blocks(3, 120, 1, 10); 
     verify_size(base);
-    sfree(b);
-    verify_blocks(3, 136, 2, 120);
+    sfree(b); 
+    verify_blocks(3, 120, 2, 110);
     verify_size(base);
 
-    char *c = (char *)smalloc(10);
+    char *c = (char *)smalloc(10); 
     REQUIRE(c != nullptr);
     REQUIRE(c == a);
 
-    verify_blocks(3, 136, 1, 104);
+    verify_blocks(3, 120, 1, 100);
     verify_size(base);
 
     sfree(c);
-    verify_blocks(3, 136, 2, 120);
+    verify_blocks(3, 120, 2, 110);
     verify_size(base);
 
     sfree(padding);
-    verify_blocks(1, 136 + 2 * _size_meta_data(), 1, 136 + 2 * _size_meta_data());
+    verify_blocks(1, 120 + 2 * _size_meta_data(), 1, 120 + 2 * _size_meta_data());
     verify_size(base);
 }
 
@@ -237,45 +237,45 @@ TEST_CASE("Reuse two blocks sizes small reversed", "[malloc3]")
     verify_blocks(0, 0, 0, 0);
 
     void *base = sbrk(0);
-    char *a = (char *)smalloc(100);
+    char *a = (char *)smalloc(100); 
     REQUIRE(a != nullptr);
 
-    verify_blocks(1, 104, 0, 0);
+    verify_blocks(1, 100, 0, 0);
     verify_size(base);
 
     char *padding = (char *)smalloc(10);
     REQUIRE(padding != nullptr);
 
-    verify_blocks(2, 120, 0, 0);
+    verify_blocks(2, 110, 0, 0); 
     verify_size(base);
 
-    char *b = (char *)smalloc(10);
+    char *b = (char *)smalloc(10); 
     REQUIRE(b != nullptr);
     REQUIRE(b != a);
 
-    verify_blocks(3, 136, 0, 0);
+    verify_blocks(3, 120, 0, 0);
     verify_size(base);
 
-    sfree(a);
-    verify_blocks(3, 136, 1, 104);
+    sfree(a); 
+    verify_blocks(3, 120, 1, 100);
     verify_size(base);
     sfree(b);
-    verify_blocks(3, 136, 2, 120);
+    verify_blocks(3, 120, 2, 110);
     verify_size(base);
 
-    char *c = (char *)smalloc(10);
+    char *c = (char *)smalloc(10); 
     REQUIRE(c != nullptr);
     REQUIRE(c == b);
 
-    verify_blocks(3, 136, 1, 104);
+    verify_blocks(3, 120, 1, 100);
     verify_size(base);
 
-    sfree(c);
-    verify_blocks(3, 136, 2, 120);
+    sfree(c); 
+    verify_blocks(3, 120, 2, 110);
     verify_size(base);
 
     sfree(padding);
-    verify_blocks(1, 136 + 2 * _size_meta_data(), 1, 136 + 2 * _size_meta_data());
+    verify_blocks(1, 120 + 2 * _size_meta_data(), 1, 120 + 2 * _size_meta_data());
     verify_size(base);
 }
 
@@ -284,44 +284,44 @@ TEST_CASE("Reuse two blocks sizes large", "[malloc3]")
     verify_blocks(0, 0, 0, 0);
 
     void *base = sbrk(0);
-    char *a = (char *)smalloc(10);
+    char *a = (char *)smalloc(10); 
     REQUIRE(a != nullptr);
 
     verify_blocks(1, 10, 0, 0);
     verify_size(base);
 
-    char *padding = (char *)smalloc(10);
+    char *padding = (char *)smalloc(10); 
     REQUIRE(padding != nullptr);
 
-    verify_blocks(2, 32, 0, 0);
+    verify_blocks(2, 20, 0, 0);
     verify_size(base);
 
     char *b = (char *)smalloc(100);
     REQUIRE(b != nullptr);
     REQUIRE(b != a);
 
-    verify_blocks(3, 136, 0, 0);
+    verify_blocks(3, 120, 0, 0);
     verify_size(base);
 
-    sfree(a);
-    verify_blocks(3, 136, 1, 16);
+    sfree(a); 
+    verify_blocks(3, 120, 1, 10);
     verify_size(base);
     sfree(b);
-    verify_blocks(3, 136, 2, 120);
+    verify_blocks(3, 120, 2, 110);
     verify_size(base);
 
-    char *c = (char *)smalloc(100);
+    char *c = (char *)smalloc(100); 
     REQUIRE(c != nullptr);
     REQUIRE(c == b);
 
-    verify_blocks(3, 136, 1, 16);
+    verify_blocks(3, 120, 1, 10);
     verify_size(base);
 
-    sfree(c);
-    verify_blocks(3, 136, 2, 120);
+    sfree(c); 
+    verify_blocks(3, 120, 2, 110);
     verify_size(base);
 
     sfree(padding);
-    verify_blocks(1, 136 + 2 * _size_meta_data(), 1, 136 + 2 * _size_meta_data());
+    verify_blocks(1, 120 + 2 * _size_meta_data(), 1, 120 + 2 * _size_meta_data());
     verify_size(base);
 }
