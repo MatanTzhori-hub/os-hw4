@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <cstring>
 #include <sys/mman.h>
-#include <cassert>
 
 #define MAX_SIZE 100000000
 #define LARGE_BLOCK 128 * 1024
@@ -105,9 +104,6 @@ void* AllocedBlocksList::insertBlock(size_t size, MallocMetadata* new_block)
             wilderness_block = new_block;
         }
     }
-    // else{
-    //     VerifyCookieCode(new_block);
-    // }
     VerifyCookieCode(head);
 
     new_block->cookie = this->cookie_code;
@@ -666,88 +662,3 @@ size_t _num_meta_data_bytes(){
 size_t _size_meta_data(){
     return allocatedBlocks.size_meta_data();
 }
-
-// *********************** Main + Testing *********************** //
-
-// void verify_size(void* base){
-//     void* after = sbrk(0);
-//     size_t side1 = _num_allocated_bytes()+_size_meta_data()*_num_allocated_blocks();
-//     size_t side2 = (size_t)after - (size_t)base;
-//     assert(side1 == side2);
-// }
-
-// void verify_blocks(size_t allocated_blocks, size_t allocated_bytes, size_t free_blocks, size_t free_bytes){
-//     assert(_num_allocated_blocks() == allocated_blocks);
-//     assert(_num_allocated_bytes() == allocated_bytes);
-//     assert(_num_free_blocks() == free_blocks);
-//     assert(_num_free_bytes() == free_bytes);
-//     assert(_num_meta_data_bytes() == _size_meta_data() * allocated_blocks);
-// }
-
-// template <typename T>
-// void populate_array(T *array, size_t len)
-// {
-//     for (size_t i = 0; i < len; i++)
-//     {
-//         array[i] = (T)i;
-//     }
-// }
-
-// template <typename T>
-// void validate_array(T *array, size_t len)
-// {
-//     for (size_t i = 0; i < len; i++)
-//     {
-//         assert((array[i] == (T)i));
-//     }
-// }
-
-// void verify_size_with_large_blocks(void* base, size_t diff){
-//     void *after = sbrk(0);
-//     assert(diff == ((size_t)after - (size_t)base));
-// }
-
-// int main(){
-//     verify_blocks(0, 0, 0, 0);
-//     void *base = sbrk(0);
-//     char *pad1 = (char *)smalloc(32);
-//     char *a = (char *)smalloc(32);
-//     char *pad2 = (char *)smalloc(32);
-//     char *b = (char *)smalloc(160);
-//     char *pad3 = (char *)smalloc(32);
-//     assert(pad1 != nullptr);
-//     assert(a != nullptr);
-//     assert(pad2 != nullptr);
-//     assert(b != nullptr);
-//     assert(pad3 != nullptr);
-
-//     size_t pad_size = 32 * 3;
-//     size_t blocks_size = 32 + 160;
-
-//     verify_blocks(5, blocks_size + pad_size, 0, 0);
-//     verify_size(base);
-//     populate_array(a, 32);
-
-//     sfree(b);
-//     verify_blocks(5, blocks_size + pad_size, 1, 160);
-//     verify_size(base);
-
-//     char *new_a = (char *)srealloc(a, 160);
-//     assert(new_a != nullptr);
-//     assert(new_a == b);
-//     verify_blocks(5, blocks_size + pad_size, 1, 32);
-//     verify_size(base);
-//     validate_array(new_a, 32);
-
-//     sfree(new_a);
-//     verify_blocks(5, blocks_size + pad_size, 2, blocks_size);
-//     verify_size(base);
-
-//     sfree(pad1);
-//     sfree(pad2);
-//     sfree(pad3);
-//     verify_blocks(1, blocks_size + pad_size + 4 * _size_meta_data(), 1, blocks_size + pad_size + 4 * _size_meta_data());
-//     verify_size(base);
-
-//     return 0;
-// }
