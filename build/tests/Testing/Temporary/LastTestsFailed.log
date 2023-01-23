@@ -1,3 +1,21 @@
-24:malloc_2.realloc
-25:malloc_2.realloc shrink
-26:malloc_2.srealloc Max size
+68:malloc_3.srealloc case a mmap
+87:malloc_4.Check size
+90:malloc_4.free
+91:malloc_4.free 2
+92:malloc_4.free 3
+93:malloc_4.free holes 1
+94:malloc_4.free holes 2
+95:malloc_4.free holes 3
+99:malloc_4.Large unaligned allocation
+101:malloc_4.Reuse two blocks
+102:malloc_4.Reuse two blocks reverse
+103:malloc_4.Reuse two blocks both
+104:malloc_4.Reuse two blocks sizes small
+105:malloc_4.Reuse two blocks sizes small reversed
+106:malloc_4.Reuse two blocks sizes large
+127:malloc_4.srealloc case a mmap
+146:malloc_4.Huge pages smalloc realloc
+148:malloc_4.Huge pages scalloc realloc
+149:malloc_4.Dynamic mmap
+150:malloc_4.Dynamic mmap 2
+151:malloc_4.Dynamic mmap threshold max

@@ -74,7 +74,6 @@ tests/CMakeFiles/malloc_2_test.dir/__/malloc_2.cpp.o
  /usr/include/c++/9/cstring
  /usr/include/string.h
  /usr/include/strings.h
- /home/rotem/os/os-hw4/linked_list.h
 
 tests/CMakeFiles/malloc_2_test.dir/malloc_2_test.cpp.o
  /home/rotem/os/os-hw4/tests/malloc_2_test.cpp

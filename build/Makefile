@@ -507,6 +507,32 @@ malloc_2_test/fast:
 .PHONY : malloc_2_test/fast
 
 #=============================================================================
+# Target rules for targets named malloc_3_test
+
+# Build rule for target.
+malloc_3_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 malloc_3_test
+.PHONY : malloc_3_test
+
+# fast build rule for target.
+malloc_3_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/build
+.PHONY : malloc_3_test/fast
+
+#=============================================================================
+# Target rules for targets named malloc_4_test
+
+# Build rule for target.
+malloc_4_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 malloc_4_test
+.PHONY : malloc_4_test
+
+# fast build rule for target.
+malloc_4_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_4_test.dir/build.make tests/CMakeFiles/malloc_4_test.dir/build
+.PHONY : malloc_4_test/fast
+
+#=============================================================================
 # Target rules for targets named Catch2
 
 # Build rule for target.
@@ -572,6 +598,8 @@ help:
 	@echo "... Catch2WithMain"
 	@echo "... malloc_1_test"
 	@echo "... malloc_2_test"
+	@echo "... malloc_3_test"
+	@echo "... malloc_4_test"
 .PHONY : help
 
 

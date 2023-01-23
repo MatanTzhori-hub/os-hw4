@@ -30,6 +30,8 @@
 /home/rotem/os/os-hw4/build/tests/CMakeFiles/ContinuousSubmit.dir
 /home/rotem/os/os-hw4/build/tests/CMakeFiles/malloc_1_test.dir
 /home/rotem/os/os-hw4/build/tests/CMakeFiles/malloc_2_test.dir
+/home/rotem/os/os-hw4/build/tests/CMakeFiles/malloc_3_test.dir
+/home/rotem/os/os-hw4/build/tests/CMakeFiles/malloc_4_test.dir
 /home/rotem/os/os-hw4/build/tests/CMakeFiles/edit_cache.dir
 /home/rotem/os/os-hw4/build/tests/CMakeFiles/rebuild_cache.dir
 /home/rotem/os/os-hw4/build/_deps/catch2-build/CMakeFiles/edit_cache.dir
