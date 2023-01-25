@@ -1,22 +1,22 @@
-Start testing: Jan 23 08:10 IST
+Start testing: Jan 25 21:59 IST
 ----------------------------------------------------------
 1/151 Testing: malloc_1.Sanity
 1/151 Test: malloc_1.Sanity
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_1_test" "Sanity"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_1.Sanity" start time: Jan 23 08:10 IST
+"malloc_1.Sanity" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Sanity
-Randomness seeded to: 4042680339
+Randomness seeded to: 1482568407
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_1.Sanity" end time: Jan 23 08:10 IST
+"malloc_1.Sanity" end time: Jan 25 21:59 IST
 "malloc_1.Sanity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -24,19 +24,19 @@ Test Passed.
 2/151 Test: malloc_1.Check size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_1_test" "Check size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_1.Check size" start time: Jan 23 08:10 IST
+"malloc_1.Check size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Check size
-Randomness seeded to: 3460100449
+Randomness seeded to: 744948661
 ===============================================================================
 All tests passed (6 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_1.Check size" end time: Jan 23 08:10 IST
+"malloc_1.Check size" end time: Jan 25 21:59 IST
 "malloc_1.Check size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -44,19 +44,19 @@ Test Passed.
 3/151 Test: malloc_1.0 size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_1_test" "0 size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_1.0 size" start time: Jan 23 08:10 IST
+"malloc_1.0 size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: 0 size
-Randomness seeded to: 3781746068
+Randomness seeded to: 1357408463
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_1.0 size" end time: Jan 23 08:10 IST
+"malloc_1.0 size" end time: Jan 25 21:59 IST
 "malloc_1.0 size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -64,19 +64,19 @@ Test Passed.
 4/151 Test: malloc_1.Max size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_1_test" "Max size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_1.Max size" start time: Jan 23 08:10 IST
+"malloc_1.Max size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Max size
-Randomness seeded to: 386801531
+Randomness seeded to: 4018333689
 ===============================================================================
 All tests passed (4 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_1.Max size" end time: Jan 23 08:10 IST
+"malloc_1.Max size" end time: Jan 25 21:59 IST
 "malloc_1.Max size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -84,19 +84,19 @@ Test Passed.
 5/151 Test: malloc_2.Sanity
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "Sanity"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.Sanity" start time: Jan 23 08:10 IST
+"malloc_2.Sanity" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Sanity
-Randomness seeded to: 2883338061
+Randomness seeded to: 936955488
 ===============================================================================
 All tests passed (19 assertions in 1 test case)
 
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.Sanity" end time: Jan 23 08:10 IST
+"malloc_2.Sanity" end time: Jan 25 21:59 IST
 "malloc_2.Sanity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -104,19 +104,19 @@ Test Passed.
 6/151 Test: malloc_2.Check size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "Check size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.Check size" start time: Jan 23 08:10 IST
+"malloc_2.Check size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Check size
-Randomness seeded to: 3540382722
+Randomness seeded to: 4597893
 ===============================================================================
 All tests passed (33 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.Check size" end time: Jan 23 08:10 IST
+"malloc_2.Check size" end time: Jan 25 21:59 IST
 "malloc_2.Check size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -124,19 +124,19 @@ Test Passed.
 7/151 Test: malloc_2.0 size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "0 size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.0 size" start time: Jan 23 08:10 IST
+"malloc_2.0 size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: 0 size
-Randomness seeded to: 1246136898
+Randomness seeded to: 1089755836
 ===============================================================================
 All tests passed (13 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.0 size" end time: Jan 23 08:10 IST
+"malloc_2.0 size" end time: Jan 25 21:59 IST
 "malloc_2.0 size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -144,19 +144,19 @@ Test Passed.
 8/151 Test: malloc_2.Max size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "Max size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.Max size" start time: Jan 23 08:10 IST
+"malloc_2.Max size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Max size
-Randomness seeded to: 121212006
+Randomness seeded to: 1315312139
 ===============================================================================
 All tests passed (27 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.Max size" end time: Jan 23 08:10 IST
+"malloc_2.Max size" end time: Jan 25 21:59 IST
 "malloc_2.Max size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -164,19 +164,19 @@ Test Passed.
 9/151 Test: malloc_2.free
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "free"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.free" start time: Jan 23 08:10 IST
+"malloc_2.free" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free
-Randomness seeded to: 2391869642
+Randomness seeded to: 116228778
 ===============================================================================
 All tests passed (59 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.free" end time: Jan 23 08:10 IST
+"malloc_2.free" end time: Jan 25 21:59 IST
 "malloc_2.free" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -184,19 +184,19 @@ Test Passed.
 10/151 Test: malloc_2.free 2
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "free 2"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.free 2" start time: Jan 23 08:10 IST
+"malloc_2.free 2" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free 2
-Randomness seeded to: 345576943
+Randomness seeded to: 473421787
 ===============================================================================
 All tests passed (59 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.free 2" end time: Jan 23 08:10 IST
+"malloc_2.free 2" end time: Jan 25 21:59 IST
 "malloc_2.free 2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -204,11 +204,11 @@ Test Passed.
 11/151 Test: malloc_2.free 3
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "free 3"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.free 3" start time: Jan 23 08:10 IST
+"malloc_2.free 3" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free 3
-Randomness seeded to: 1779783155
+Randomness seeded to: 698348312
 ===============================================================================
 All tests passed (59 assertions in 1 test case)
 
@@ -216,7 +216,7 @@ All tests passed (59 assertions in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.free 3" end time: Jan 23 08:10 IST
+"malloc_2.free 3" end time: Jan 25 21:59 IST
 "malloc_2.free 3" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -224,19 +224,19 @@ Test Passed.
 12/151 Test: malloc_2.Reuse
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "Reuse"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.Reuse" start time: Jan 23 08:10 IST
+"malloc_2.Reuse" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse
-Randomness seeded to: 2483899222
+Randomness seeded to: 2077422706
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.Reuse" end time: Jan 23 08:10 IST
+"malloc_2.Reuse" end time: Jan 25 21:59 IST
 "malloc_2.Reuse" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -244,19 +244,19 @@ Test Passed.
 13/151 Test: malloc_2.Reuse two blocks
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "Reuse two blocks"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.Reuse two blocks" start time: Jan 23 08:10 IST
+"malloc_2.Reuse two blocks" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks
-Randomness seeded to: 4170038630
+Randomness seeded to: 2211360570
 ===============================================================================
 All tests passed (46 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.Reuse two blocks" end time: Jan 23 08:10 IST
+"malloc_2.Reuse two blocks" end time: Jan 25 21:59 IST
 "malloc_2.Reuse two blocks" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -264,19 +264,19 @@ Test Passed.
 14/151 Test: malloc_2.Reuse two blocks reverse
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "Reuse two blocks reverse"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.Reuse two blocks reverse" start time: Jan 23 08:10 IST
+"malloc_2.Reuse two blocks reverse" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks reverse
-Randomness seeded to: 2723021325
+Randomness seeded to: 4210569099
 ===============================================================================
 All tests passed (46 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.Reuse two blocks reverse" end time: Jan 23 08:10 IST
+"malloc_2.Reuse two blocks reverse" end time: Jan 25 21:59 IST
 "malloc_2.Reuse two blocks reverse" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -284,19 +284,19 @@ Test Passed.
 15/151 Test: malloc_2.Reuse two blocks both
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "Reuse two blocks both"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.Reuse two blocks both" start time: Jan 23 08:10 IST
+"malloc_2.Reuse two blocks both" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks both
-Randomness seeded to: 3237471358
+Randomness seeded to: 1261890288
 ===============================================================================
 All tests passed (46 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.Reuse two blocks both" end time: Jan 23 08:10 IST
+"malloc_2.Reuse two blocks both" end time: Jan 25 21:59 IST
 "malloc_2.Reuse two blocks both" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -304,19 +304,19 @@ Test Passed.
 16/151 Test: malloc_2.Reuse two blocks sizes small
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "Reuse two blocks sizes small"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.Reuse two blocks sizes small" start time: Jan 23 08:10 IST
+"malloc_2.Reuse two blocks sizes small" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks sizes small
-Randomness seeded to: 2032209621
+Randomness seeded to: 4188458336
 ===============================================================================
 All tests passed (46 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.Reuse two blocks sizes small" end time: Jan 23 08:10 IST
+"malloc_2.Reuse two blocks sizes small" end time: Jan 25 21:59 IST
 "malloc_2.Reuse two blocks sizes small" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -324,19 +324,19 @@ Test Passed.
 17/151 Test: malloc_2.Reuse two blocks sizes large
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "Reuse two blocks sizes large"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.Reuse two blocks sizes large" start time: Jan 23 08:10 IST
+"malloc_2.Reuse two blocks sizes large" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks sizes large
-Randomness seeded to: 2368936338
+Randomness seeded to: 654358585
 ===============================================================================
 All tests passed (46 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.Reuse two blocks sizes large" end time: Jan 23 08:10 IST
+"malloc_2.Reuse two blocks sizes large" end time: Jan 25 21:59 IST
 "malloc_2.Reuse two blocks sizes large" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -344,19 +344,19 @@ Test Passed.
 18/151 Test: malloc_2.scalloc
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "scalloc"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.scalloc" start time: Jan 23 08:10 IST
+"malloc_2.scalloc" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc
-Randomness seeded to: 3097844070
+Randomness seeded to: 1045611577
 ===============================================================================
 All tests passed (51 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.scalloc" end time: Jan 23 08:10 IST
+"malloc_2.scalloc" end time: Jan 25 21:59 IST
 "malloc_2.scalloc" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -364,19 +364,19 @@ Test Passed.
 19/151 Test: malloc_2.scalloc taint
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "scalloc taint"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.scalloc taint" start time: Jan 23 08:10 IST
+"malloc_2.scalloc taint" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc taint
-Randomness seeded to: 3271024777
+Randomness seeded to: 3838861516
 ===============================================================================
 All tests passed (232 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.scalloc taint" end time: Jan 23 08:10 IST
+"malloc_2.scalloc taint" end time: Jan 25 21:59 IST
 "malloc_2.scalloc taint" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -384,19 +384,19 @@ Test Passed.
 20/151 Test: malloc_2.scalloc 0 size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "scalloc 0 size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.scalloc 0 size" start time: Jan 23 08:10 IST
+"malloc_2.scalloc 0 size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc 0 size
-Randomness seeded to: 1606029520
+Randomness seeded to: 2255433670
 ===============================================================================
 All tests passed (21 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.scalloc 0 size" end time: Jan 23 08:10 IST
+"malloc_2.scalloc 0 size" end time: Jan 25 21:59 IST
 "malloc_2.scalloc 0 size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -404,19 +404,19 @@ Test Passed.
 21/151 Test: malloc_2.scalloc Max size num
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "scalloc Max size num"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.scalloc Max size num" start time: Jan 23 08:10 IST
+"malloc_2.scalloc Max size num" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc Max size num
-Randomness seeded to: 2093958492
+Randomness seeded to: 1936618278
 ===============================================================================
 All tests passed (27 assertions in 1 test case)
 
 <end of output>
-Test time =   0.19 sec
+Test time =   0.27 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.scalloc Max size num" end time: Jan 23 08:10 IST
+"malloc_2.scalloc Max size num" end time: Jan 25 21:59 IST
 "malloc_2.scalloc Max size num" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -424,19 +424,19 @@ Test Passed.
 22/151 Test: malloc_2.scalloc Max size size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "scalloc Max size size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.scalloc Max size size" start time: Jan 23 08:10 IST
+"malloc_2.scalloc Max size size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc Max size size
-Randomness seeded to: 2668278873
+Randomness seeded to: 140822732
 ===============================================================================
 All tests passed (27 assertions in 1 test case)
 
 <end of output>
-Test time =   0.15 sec
+Test time =   0.11 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.scalloc Max size size" end time: Jan 23 08:10 IST
+"malloc_2.scalloc Max size size" end time: Jan 25 21:59 IST
 "malloc_2.scalloc Max size size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -444,19 +444,19 @@ Test Passed.
 23/151 Test: malloc_2.scalloc Max size both
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "scalloc Max size both"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.scalloc Max size both" start time: Jan 23 08:10 IST
+"malloc_2.scalloc Max size both" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc Max size both
-Randomness seeded to: 2043735440
+Randomness seeded to: 121611174
 ===============================================================================
 All tests passed (35 assertions in 1 test case)
 
 <end of output>
-Test time =   0.19 sec
+Test time =   0.12 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.scalloc Max size both" end time: Jan 23 08:10 IST
+"malloc_2.scalloc Max size both" end time: Jan 25 21:59 IST
 "malloc_2.scalloc Max size both" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -464,11 +464,11 @@ Test Passed.
 24/151 Test: malloc_2.realloc
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "realloc"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.realloc" start time: Jan 23 08:10 IST
+"malloc_2.realloc" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: realloc
-Randomness seeded to: 583405092
+Randomness seeded to: 1196024184
 ===============================================================================
 All tests passed (36 assertions in 1 test case)
 
@@ -476,7 +476,7 @@ All tests passed (36 assertions in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.realloc" end time: Jan 23 08:10 IST
+"malloc_2.realloc" end time: Jan 25 21:59 IST
 "malloc_2.realloc" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -484,19 +484,19 @@ Test Passed.
 25/151 Test: malloc_2.realloc shrink
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "realloc shrink"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.realloc shrink" start time: Jan 23 08:10 IST
+"malloc_2.realloc shrink" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: realloc shrink
-Randomness seeded to: 3066917956
+Randomness seeded to: 337624479
 ===============================================================================
 All tests passed (36 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.realloc shrink" end time: Jan 23 08:10 IST
+"malloc_2.realloc shrink" end time: Jan 25 21:59 IST
 "malloc_2.realloc shrink" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -504,11 +504,11 @@ Test Passed.
 26/151 Test: malloc_2.srealloc Max size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_2_test" "srealloc Max size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_2.srealloc Max size" start time: Jan 23 08:10 IST
+"malloc_2.srealloc Max size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc Max size
-Randomness seeded to: 440409193
+Randomness seeded to: 3058787939
 ===============================================================================
 All tests passed (35 assertions in 1 test case)
 
@@ -516,7 +516,7 @@ All tests passed (35 assertions in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_2.srealloc Max size" end time: Jan 23 08:10 IST
+"malloc_2.srealloc Max size" end time: Jan 25 21:59 IST
 "malloc_2.srealloc Max size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -524,11 +524,11 @@ Test Passed.
 27/151 Test: malloc_3.Sanity
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Sanity"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Sanity" start time: Jan 23 08:10 IST
+"malloc_3.Sanity" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Sanity
-Randomness seeded to: 360825316
+Randomness seeded to: 1595832135
 ===============================================================================
 All tests passed (18 assertions in 1 test case)
 
@@ -536,7 +536,7 @@ All tests passed (18 assertions in 1 test case)
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Sanity" end time: Jan 23 08:10 IST
+"malloc_3.Sanity" end time: Jan 25 21:59 IST
 "malloc_3.Sanity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -544,19 +544,19 @@ Test Passed.
 28/151 Test: malloc_3.Check size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Check size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Check size" start time: Jan 23 08:10 IST
+"malloc_3.Check size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Check size
-Randomness seeded to: 1373270112
+Randomness seeded to: 1350628325
 ===============================================================================
 All tests passed (33 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Check size" end time: Jan 23 08:10 IST
+"malloc_3.Check size" end time: Jan 25 21:59 IST
 "malloc_3.Check size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -564,19 +564,19 @@ Test Passed.
 29/151 Test: malloc_3.0 size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "0 size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.0 size" start time: Jan 23 08:10 IST
+"malloc_3.0 size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: 0 size
-Randomness seeded to: 580633836
+Randomness seeded to: 4267088534
 ===============================================================================
 All tests passed (13 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.0 size" end time: Jan 23 08:10 IST
+"malloc_3.0 size" end time: Jan 25 21:59 IST
 "malloc_3.0 size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -584,19 +584,19 @@ Test Passed.
 30/151 Test: malloc_3.Max size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Max size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Max size" start time: Jan 23 08:10 IST
+"malloc_3.Max size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Max size
-Randomness seeded to: 995044968
+Randomness seeded to: 4186913615
 ===============================================================================
 All tests passed (26 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Max size" end time: Jan 23 08:10 IST
+"malloc_3.Max size" end time: Jan 25 21:59 IST
 "malloc_3.Max size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -604,19 +604,19 @@ Test Passed.
 31/151 Test: malloc_3.free
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "free"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.free" start time: Jan 23 08:10 IST
+"malloc_3.free" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free
-Randomness seeded to: 1288670928
+Randomness seeded to: 703511635
 ===============================================================================
 All tests passed (59 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.free" end time: Jan 23 08:10 IST
+"malloc_3.free" end time: Jan 25 21:59 IST
 "malloc_3.free" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -624,19 +624,19 @@ Test Passed.
 32/151 Test: malloc_3.free 2
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "free 2"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.free 2" start time: Jan 23 08:10 IST
+"malloc_3.free 2" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free 2
-Randomness seeded to: 814992633
+Randomness seeded to: 2762829930
 ===============================================================================
 All tests passed (59 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.free 2" end time: Jan 23 08:10 IST
+"malloc_3.free 2" end time: Jan 25 21:59 IST
 "malloc_3.free 2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -644,19 +644,19 @@ Test Passed.
 33/151 Test: malloc_3.free 3
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "free 3"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.free 3" start time: Jan 23 08:10 IST
+"malloc_3.free 3" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free 3
-Randomness seeded to: 3374287399
+Randomness seeded to: 2596931142
 ===============================================================================
 All tests passed (59 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.free 3" end time: Jan 23 08:10 IST
+"malloc_3.free 3" end time: Jan 25 21:59 IST
 "malloc_3.free 3" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -664,19 +664,19 @@ Test Passed.
 34/151 Test: malloc_3.free holes 1
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "free holes 1"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.free holes 1" start time: Jan 23 08:10 IST
+"malloc_3.free holes 1" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free holes 1
-Randomness seeded to: 2281248077
+Randomness seeded to: 210505906
 ===============================================================================
 All tests passed (73 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.free holes 1" end time: Jan 23 08:10 IST
+"malloc_3.free holes 1" end time: Jan 25 21:59 IST
 "malloc_3.free holes 1" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -684,19 +684,19 @@ Test Passed.
 35/151 Test: malloc_3.free holes 2
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "free holes 2"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.free holes 2" start time: Jan 23 08:10 IST
+"malloc_3.free holes 2" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free holes 2
-Randomness seeded to: 925832222
+Randomness seeded to: 211330155
 ===============================================================================
 All tests passed (73 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.free holes 2" end time: Jan 23 08:10 IST
+"malloc_3.free holes 2" end time: Jan 25 21:59 IST
 "malloc_3.free holes 2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -704,19 +704,19 @@ Test Passed.
 36/151 Test: malloc_3.free holes 3
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "free holes 3"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.free holes 3" start time: Jan 23 08:10 IST
+"malloc_3.free holes 3" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free holes 3
-Randomness seeded to: 4171041693
+Randomness seeded to: 3407749699
 ===============================================================================
 All tests passed (73 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.free holes 3" end time: Jan 23 08:10 IST
+"malloc_3.free holes 3" end time: Jan 25 21:59 IST
 "malloc_3.free holes 3" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -724,19 +724,19 @@ Test Passed.
 37/151 Test: malloc_3.Wilderness available
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Wilderness available"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Wilderness available" start time: Jan 23 08:10 IST
+"malloc_3.Wilderness available" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Wilderness available
-Randomness seeded to: 4109448824
+Randomness seeded to: 1060940001
 ===============================================================================
 All tests passed (46 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Wilderness available" end time: Jan 23 08:10 IST
+"malloc_3.Wilderness available" end time: Jan 25 21:59 IST
 "malloc_3.Wilderness available" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -744,19 +744,19 @@ Test Passed.
 38/151 Test: malloc_3.Wilderness available pad
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Wilderness available pad"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Wilderness available pad" start time: Jan 23 08:10 IST
+"malloc_3.Wilderness available pad" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Wilderness available pad
-Randomness seeded to: 2238076376
+Randomness seeded to: 1462210631
 ===============================================================================
 All tests passed (59 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Wilderness available pad" end time: Jan 23 08:10 IST
+"malloc_3.Wilderness available pad" end time: Jan 25 21:59 IST
 "malloc_3.Wilderness available pad" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -764,19 +764,19 @@ Test Passed.
 39/151 Test: malloc_3.Large allocation
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Large allocation"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Large allocation" start time: Jan 23 08:10 IST
+"malloc_3.Large allocation" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Large allocation
-Randomness seeded to: 2972694615
+Randomness seeded to: 704851407
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Large allocation" end time: Jan 23 08:10 IST
+"malloc_3.Large allocation" end time: Jan 25 21:59 IST
 "malloc_3.Large allocation" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -784,11 +784,11 @@ Test Passed.
 40/151 Test: malloc_3.Large unaligned allocation
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Large unaligned allocation"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Large unaligned allocation" start time: Jan 23 08:10 IST
+"malloc_3.Large unaligned allocation" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Large unaligned allocation
-Randomness seeded to: 2243522243
+Randomness seeded to: 2628659903
 ===============================================================================
 All tests passed (19 assertions in 1 test case)
 
@@ -796,7 +796,7 @@ All tests passed (19 assertions in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Large unaligned allocation" end time: Jan 23 08:10 IST
+"malloc_3.Large unaligned allocation" end time: Jan 25 21:59 IST
 "malloc_3.Large unaligned allocation" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -804,19 +804,19 @@ Test Passed.
 41/151 Test: malloc_3.Reuse
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Reuse"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Reuse" start time: Jan 23 08:10 IST
+"malloc_3.Reuse" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse
-Randomness seeded to: 357156820
+Randomness seeded to: 3667852335
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Reuse" end time: Jan 23 08:10 IST
+"malloc_3.Reuse" end time: Jan 25 21:59 IST
 "malloc_3.Reuse" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -824,19 +824,19 @@ Test Passed.
 42/151 Test: malloc_3.Reuse two blocks
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Reuse two blocks"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Reuse two blocks" start time: Jan 23 08:10 IST
+"malloc_3.Reuse two blocks" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks
-Randomness seeded to: 1614651136
+Randomness seeded to: 2661946857
 ===============================================================================
 All tests passed (46 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Reuse two blocks" end time: Jan 23 08:10 IST
+"malloc_3.Reuse two blocks" end time: Jan 25 21:59 IST
 "malloc_3.Reuse two blocks" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -844,19 +844,19 @@ Test Passed.
 43/151 Test: malloc_3.Reuse two blocks reverse
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Reuse two blocks reverse"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Reuse two blocks reverse" start time: Jan 23 08:10 IST
+"malloc_3.Reuse two blocks reverse" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks reverse
-Randomness seeded to: 3722011341
+Randomness seeded to: 3214584017
 ===============================================================================
 All tests passed (46 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Reuse two blocks reverse" end time: Jan 23 08:10 IST
+"malloc_3.Reuse two blocks reverse" end time: Jan 25 21:59 IST
 "malloc_3.Reuse two blocks reverse" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -864,11 +864,11 @@ Test Passed.
 44/151 Test: malloc_3.Reuse two blocks both
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Reuse two blocks both"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Reuse two blocks both" start time: Jan 23 08:10 IST
+"malloc_3.Reuse two blocks both" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks both
-Randomness seeded to: 1414032327
+Randomness seeded to: 3136650089
 ===============================================================================
 All tests passed (59 assertions in 1 test case)
 
@@ -876,7 +876,7 @@ All tests passed (59 assertions in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Reuse two blocks both" end time: Jan 23 08:10 IST
+"malloc_3.Reuse two blocks both" end time: Jan 25 21:59 IST
 "malloc_3.Reuse two blocks both" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -884,19 +884,19 @@ Test Passed.
 45/151 Test: malloc_3.Reuse two blocks sizes small
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Reuse two blocks sizes small"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Reuse two blocks sizes small" start time: Jan 23 08:10 IST
+"malloc_3.Reuse two blocks sizes small" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks sizes small
-Randomness seeded to: 734116658
+Randomness seeded to: 36845585
 ===============================================================================
 All tests passed (59 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Reuse two blocks sizes small" end time: Jan 23 08:10 IST
+"malloc_3.Reuse two blocks sizes small" end time: Jan 25 21:59 IST
 "malloc_3.Reuse two blocks sizes small" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -904,19 +904,19 @@ Test Passed.
 46/151 Test: malloc_3.Reuse two blocks sizes small reversed
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Reuse two blocks sizes small reversed"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Reuse two blocks sizes small reversed" start time: Jan 23 08:10 IST
+"malloc_3.Reuse two blocks sizes small reversed" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks sizes small reversed
-Randomness seeded to: 3208316239
+Randomness seeded to: 1568764623
 ===============================================================================
 All tests passed (59 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Reuse two blocks sizes small reversed" end time: Jan 23 08:10 IST
+"malloc_3.Reuse two blocks sizes small reversed" end time: Jan 25 21:59 IST
 "malloc_3.Reuse two blocks sizes small reversed" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -924,19 +924,19 @@ Test Passed.
 47/151 Test: malloc_3.Reuse two blocks sizes large
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Reuse two blocks sizes large"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Reuse two blocks sizes large" start time: Jan 23 08:10 IST
+"malloc_3.Reuse two blocks sizes large" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks sizes large
-Randomness seeded to: 2355879025
+Randomness seeded to: 716729024
 ===============================================================================
 All tests passed (59 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Reuse two blocks sizes large" end time: Jan 23 08:10 IST
+"malloc_3.Reuse two blocks sizes large" end time: Jan 25 21:59 IST
 "malloc_3.Reuse two blocks sizes large" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -944,19 +944,19 @@ Test Passed.
 48/151 Test: malloc_3.scalloc
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "scalloc"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.scalloc" start time: Jan 23 08:10 IST
+"malloc_3.scalloc" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc
-Randomness seeded to: 3707068410
+Randomness seeded to: 2548038493
 ===============================================================================
 All tests passed (51 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.scalloc" end time: Jan 23 08:10 IST
+"malloc_3.scalloc" end time: Jan 25 21:59 IST
 "malloc_3.scalloc" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -964,19 +964,19 @@ Test Passed.
 49/151 Test: malloc_3.scalloc taint
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "scalloc taint"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.scalloc taint" start time: Jan 23 08:10 IST
+"malloc_3.scalloc taint" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc taint
-Randomness seeded to: 2004960705
+Randomness seeded to: 2202004601
 ===============================================================================
 All tests passed (232 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.scalloc taint" end time: Jan 23 08:10 IST
+"malloc_3.scalloc taint" end time: Jan 25 21:59 IST
 "malloc_3.scalloc taint" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -984,19 +984,19 @@ Test Passed.
 50/151 Test: malloc_3.scalloc 0 size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "scalloc 0 size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.scalloc 0 size" start time: Jan 23 08:10 IST
+"malloc_3.scalloc 0 size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc 0 size
-Randomness seeded to: 3017488806
+Randomness seeded to: 2230943385
 ===============================================================================
 All tests passed (21 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.scalloc 0 size" end time: Jan 23 08:10 IST
+"malloc_3.scalloc 0 size" end time: Jan 25 21:59 IST
 "malloc_3.scalloc 0 size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1004,19 +1004,19 @@ Test Passed.
 51/151 Test: malloc_3.scalloc Max size num
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "scalloc Max size num"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.scalloc Max size num" start time: Jan 23 08:10 IST
+"malloc_3.scalloc Max size num" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc Max size num
-Randomness seeded to: 4151406205
+Randomness seeded to: 2289725910
 ===============================================================================
 All tests passed (27 assertions in 1 test case)
 
 <end of output>
-Test time =   0.25 sec
+Test time =   0.11 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.scalloc Max size num" end time: Jan 23 08:10 IST
+"malloc_3.scalloc Max size num" end time: Jan 25 21:59 IST
 "malloc_3.scalloc Max size num" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1024,19 +1024,19 @@ Test Passed.
 52/151 Test: malloc_3.scalloc Max size size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "scalloc Max size size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.scalloc Max size size" start time: Jan 23 08:10 IST
+"malloc_3.scalloc Max size size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc Max size size
-Randomness seeded to: 1557142712
+Randomness seeded to: 1791846161
 ===============================================================================
 All tests passed (27 assertions in 1 test case)
 
 <end of output>
-Test time =   0.18 sec
+Test time =   0.11 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.scalloc Max size size" end time: Jan 23 08:10 IST
+"malloc_3.scalloc Max size size" end time: Jan 25 21:59 IST
 "malloc_3.scalloc Max size size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1044,19 +1044,19 @@ Test Passed.
 53/151 Test: malloc_3.scalloc Max size both
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "scalloc Max size both"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.scalloc Max size both" start time: Jan 23 08:10 IST
+"malloc_3.scalloc Max size both" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc Max size both
-Randomness seeded to: 2993456409
+Randomness seeded to: 2276569248
 ===============================================================================
 All tests passed (35 assertions in 1 test case)
 
 <end of output>
-Test time =   0.20 sec
+Test time =   0.11 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.scalloc Max size both" end time: Jan 23 08:10 IST
+"malloc_3.scalloc Max size both" end time: Jan 25 21:59 IST
 "malloc_3.scalloc Max size both" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1064,11 +1064,11 @@ Test Passed.
 54/151 Test: malloc_3.Split block
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Split block"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Split block" start time: Jan 23 08:10 IST
+"malloc_3.Split block" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Split block
-Randomness seeded to: 850329847
+Randomness seeded to: 193632680
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
@@ -1076,7 +1076,7 @@ All tests passed (32 assertions in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Split block" end time: Jan 23 08:10 IST
+"malloc_3.Split block" end time: Jan 25 21:59 IST
 "malloc_3.Split block" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1084,19 +1084,19 @@ Test Passed.
 55/151 Test: malloc_3.Split block under threshold
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Split block under threshold"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Split block under threshold" start time: Jan 23 08:10 IST
+"malloc_3.Split block under threshold" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Split block under threshold
-Randomness seeded to: 1549923913
+Randomness seeded to: 1030778806
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Split block under threshold" end time: Jan 23 08:10 IST
+"malloc_3.Split block under threshold" end time: Jan 25 21:59 IST
 "malloc_3.Split block under threshold" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1104,19 +1104,19 @@ Test Passed.
 56/151 Test: malloc_3.Split block threshold
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Split block threshold"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Split block threshold" start time: Jan 23 08:10 IST
+"malloc_3.Split block threshold" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Split block threshold
-Randomness seeded to: 2670204182
+Randomness seeded to: 2342662587
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Split block threshold" end time: Jan 23 08:10 IST
+"malloc_3.Split block threshold" end time: Jan 25 21:59 IST
 "malloc_3.Split block threshold" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1124,19 +1124,19 @@ Test Passed.
 57/151 Test: malloc_3.Merge with prev block
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Merge with prev block"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Merge with prev block" start time: Jan 23 08:10 IST
+"malloc_3.Merge with prev block" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Merge with prev block
-Randomness seeded to: 2560570631
+Randomness seeded to: 3069143476
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Merge with prev block" end time: Jan 23 08:10 IST
+"malloc_3.Merge with prev block" end time: Jan 25 21:59 IST
 "malloc_3.Merge with prev block" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1144,19 +1144,19 @@ Test Passed.
 58/151 Test: malloc_3.Merge with prev block pad
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Merge with prev block pad"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Merge with prev block pad" start time: Jan 23 08:10 IST
+"malloc_3.Merge with prev block pad" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Merge with prev block pad
-Randomness seeded to: 2399533175
+Randomness seeded to: 2121779371
 ===============================================================================
 All tests passed (58 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Merge with prev block pad" end time: Jan 23 08:10 IST
+"malloc_3.Merge with prev block pad" end time: Jan 25 21:59 IST
 "malloc_3.Merge with prev block pad" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1164,19 +1164,19 @@ Test Passed.
 59/151 Test: malloc_3.Merge with next block
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Merge with next block"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Merge with next block" start time: Jan 23 08:10 IST
+"malloc_3.Merge with next block" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Merge with next block
-Randomness seeded to: 3813354961
+Randomness seeded to: 2421920663
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Merge with next block" end time: Jan 23 08:10 IST
+"malloc_3.Merge with next block" end time: Jan 25 21:59 IST
 "malloc_3.Merge with next block" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1184,19 +1184,19 @@ Test Passed.
 60/151 Test: malloc_3.Merge with next block pad
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Merge with next block pad"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Merge with next block pad" start time: Jan 23 08:10 IST
+"malloc_3.Merge with next block pad" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Merge with next block pad
-Randomness seeded to: 4244228966
+Randomness seeded to: 867617277
 ===============================================================================
 All tests passed (58 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Merge with next block pad" end time: Jan 23 08:10 IST
+"malloc_3.Merge with next block pad" end time: Jan 25 21:59 IST
 "malloc_3.Merge with next block pad" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1204,19 +1204,19 @@ Test Passed.
 61/151 Test: malloc_3.Merge with both blocks
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Merge with both blocks"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Merge with both blocks" start time: Jan 23 08:10 IST
+"malloc_3.Merge with both blocks" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Merge with both blocks
-Randomness seeded to: 4047789489
+Randomness seeded to: 1551226522
 ===============================================================================
 All tests passed (47 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Merge with both blocks" end time: Jan 23 08:10 IST
+"malloc_3.Merge with both blocks" end time: Jan 25 21:59 IST
 "malloc_3.Merge with both blocks" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1224,19 +1224,19 @@ Test Passed.
 62/151 Test: malloc_3.Merge with both blocks pad
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "Merge with both blocks pad"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.Merge with both blocks pad" start time: Jan 23 08:10 IST
+"malloc_3.Merge with both blocks pad" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Merge with both blocks pad
-Randomness seeded to: 903195202
+Randomness seeded to: 4063734147
 ===============================================================================
 All tests passed (73 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.Merge with both blocks pad" end time: Jan 23 08:10 IST
+"malloc_3.Merge with both blocks pad" end time: Jan 25 21:59 IST
 "malloc_3.Merge with both blocks pad" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1244,19 +1244,19 @@ Test Passed.
 63/151 Test: malloc_3.realloc
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "realloc"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.realloc" start time: Jan 23 08:10 IST
+"malloc_3.realloc" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: realloc
-Randomness seeded to: 906241690
+Randomness seeded to: 1580299428
 ===============================================================================
 All tests passed (36 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.realloc" end time: Jan 23 08:10 IST
+"malloc_3.realloc" end time: Jan 25 21:59 IST
 "malloc_3.realloc" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1264,19 +1264,19 @@ Test Passed.
 64/151 Test: malloc_3.realloc shrink
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "realloc shrink"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.realloc shrink" start time: Jan 23 08:10 IST
+"malloc_3.realloc shrink" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: realloc shrink
-Randomness seeded to: 901958067
+Randomness seeded to: 1603437175
 ===============================================================================
 All tests passed (36 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.realloc shrink" end time: Jan 23 08:10 IST
+"malloc_3.realloc shrink" end time: Jan 25 21:59 IST
 "malloc_3.realloc shrink" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1284,19 +1284,19 @@ Test Passed.
 65/151 Test: malloc_3.srealloc Max size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc Max size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc Max size" start time: Jan 23 08:10 IST
+"malloc_3.srealloc Max size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc Max size
-Randomness seeded to: 1923064998
+Randomness seeded to: 834633381
 ===============================================================================
 All tests passed (35 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc Max size" end time: Jan 23 08:10 IST
+"malloc_3.srealloc Max size" end time: Jan 25 21:59 IST
 "malloc_3.srealloc Max size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1304,19 +1304,19 @@ Test Passed.
 66/151 Test: malloc_3.srealloc case a
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case a"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case a" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case a" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case a
-Randomness seeded to: 2156291305
+Randomness seeded to: 4007158038
 ===============================================================================
 All tests passed (112 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case a" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case a" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case a" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1324,19 +1324,19 @@ Test Passed.
 67/151 Test: malloc_3.srealloc case a split
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case a split"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case a split" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case a split" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case a split
-Randomness seeded to: 2139979445
+Randomness seeded to: 2173942334
 ===============================================================================
 All tests passed (58 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case a split" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case a split" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case a split" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1344,11 +1344,11 @@ Test Passed.
 68/151 Test: malloc_3.srealloc case a mmap
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case a mmap"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case a mmap" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case a mmap" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case a mmap
-Randomness seeded to: 3454569475
+Randomness seeded to: 3789111070
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_3_test is a Catch2 v3.0.1 host application.
@@ -1370,10 +1370,10 @@ test cases:      1 |      0 passed | 1 failed
 assertions: 131100 | 131099 passed | 1 failed
 
 <end of output>
-Test time =   0.03 sec
+Test time =   0.07 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_3.srealloc case a mmap" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case a mmap" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case a mmap" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1381,19 +1381,19 @@ Test Failed.
 69/151 Test: malloc_3.srealloc case b
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case b"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case b" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case b" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case b
-Randomness seeded to: 3619124944
+Randomness seeded to: 2344239044
 ===============================================================================
 All tests passed (106 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case b" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case b" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case b" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1401,11 +1401,11 @@ Test Passed.
 70/151 Test: malloc_3.srealloc case b metadata
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case b metadata"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case b metadata" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case b metadata" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case b metadata
-Randomness seeded to: 1923848814
+Randomness seeded to: 1298279897
 ===============================================================================
 All tests passed (66 assertions in 1 test case)
 
@@ -1413,7 +1413,7 @@ All tests passed (66 assertions in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case b metadata" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case b metadata" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case b metadata" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1421,19 +1421,36 @@ Test Passed.
 71/151 Test: malloc_3.srealloc case b split
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case b split"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case b split" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case b split" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case b split
-Randomness seeded to: 4049568095
+Randomness seeded to: 3568317988
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case b split
+-------------------------------------------------------------------------------
+/home/rotem/os/os-hw4/tests/malloc_3_test_srealloc_cases.cpp:222
+...............................................................................
+
+/home/rotem/os/os-hw4/tests/malloc_3_test_srealloc_cases.cpp:245: FAILED:
+  REQUIRE( _num_allocated_blocks() == 2 )
+with expansion:
+  3 == 2
+
 ===============================================================================
-All tests passed (66 assertions in 1 test case)
+test cases:  1 |  0 passed | 1 failed
+assertions: 23 | 22 passed | 1 failed
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
-Test Passed.
-"malloc_3.srealloc case b split" end time: Jan 23 08:10 IST
+Test Failed.
+"malloc_3.srealloc case b split" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case b split" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1441,19 +1458,19 @@ Test Passed.
 72/151 Test: malloc_3.srealloc case b wilderness
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case b wilderness"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case b wilderness" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case b wilderness" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case b wilderness
-Randomness seeded to: 2255434031
+Randomness seeded to: 208505041
 ===============================================================================
 All tests passed (65 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case b wilderness" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case b wilderness" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case b wilderness" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1461,19 +1478,19 @@ Test Passed.
 73/151 Test: malloc_3.srealloc case b wilderness 2
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case b wilderness 2"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case b wilderness 2" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case b wilderness 2" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case b wilderness 2
-Randomness seeded to: 457594618
+Randomness seeded to: 2945337101
 ===============================================================================
 All tests passed (97 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case b wilderness 2" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case b wilderness 2" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case b wilderness 2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1481,19 +1498,19 @@ Test Passed.
 74/151 Test: malloc_3.srealloc case c
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case c"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case c" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case c" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case c
-Randomness seeded to: 2596380692
+Randomness seeded to: 245954660
 ===============================================================================
 All tests passed (90 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case c" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case c" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case c" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1501,19 +1518,19 @@ Test Passed.
 75/151 Test: malloc_3.srealloc case c 2
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case c 2"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case c 2" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case c 2" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case c 2
-Randomness seeded to: 2473641536
+Randomness seeded to: 3153076634
 ===============================================================================
 All tests passed (97 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case c 2" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case c 2" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case c 2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1521,19 +1538,19 @@ Test Passed.
 76/151 Test: malloc_3.srealloc case d
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case d"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case d" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case d" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case d
-Randomness seeded to: 1697902316
+Randomness seeded to: 4329553
 ===============================================================================
 All tests passed (112 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case d" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case d" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case d" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1541,19 +1558,19 @@ Test Passed.
 77/151 Test: malloc_3.srealloc case d metadata
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case d metadata"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case d metadata" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case d metadata" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case d metadata
-Randomness seeded to: 693668574
+Randomness seeded to: 954839843
 ===============================================================================
 All tests passed (72 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case d metadata" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case d metadata" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case d metadata" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1561,19 +1578,19 @@ Test Passed.
 78/151 Test: malloc_3.srealloc case d split
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case d split"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case d split" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case d split" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case d split
-Randomness seeded to: 2696217728
+Randomness seeded to: 4208984301
 ===============================================================================
 All tests passed (72 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case d split" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case d split" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case d split" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1581,19 +1598,19 @@ Test Passed.
 79/151 Test: malloc_3.srealloc case e
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case e"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case e" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case e" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case e
-Randomness seeded to: 2540185257
+Randomness seeded to: 2632810620
 ===============================================================================
 All tests passed (74 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case e" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case e" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case e" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1601,19 +1618,19 @@ Test Passed.
 80/151 Test: malloc_3.srealloc case e no pad
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case e no pad"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case e no pad" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case e no pad" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case e no pad
-Randomness seeded to: 1817763718
+Randomness seeded to: 2977130159
 ===============================================================================
 All tests passed (73 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case e no pad" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case e no pad" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case e no pad" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1621,19 +1638,19 @@ Test Passed.
 81/151 Test: malloc_3.srealloc case e split
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case e split"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case e split" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case e split" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case e split
-Randomness seeded to: 3889813971
+Randomness seeded to: 679542615
 ===============================================================================
 All tests passed (146 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case e split" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case e split" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case e split" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1641,19 +1658,19 @@ Test Passed.
 82/151 Test: malloc_3.srealloc case fi
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case fi"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case fi" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case fi" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case fi
-Randomness seeded to: 2394381921
+Randomness seeded to: 1098216053
 ===============================================================================
 All tests passed (73 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case fi" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case fi" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case fi" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1661,19 +1678,19 @@ Test Passed.
 83/151 Test: malloc_3.srealloc case fii
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case fii"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case fii" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case fii" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case fii
-Randomness seeded to: 3019112814
+Randomness seeded to: 1701819420
 ===============================================================================
 All tests passed (79 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case fii" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case fii" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case fii" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1681,19 +1698,19 @@ Test Passed.
 84/151 Test: malloc_3.srealloc case g
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case g"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case g" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case g" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case g
-Randomness seeded to: 420381462
+Randomness seeded to: 3317223021
 ===============================================================================
 All tests passed (74 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case g" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case g" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case g" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1701,19 +1718,19 @@ Test Passed.
 85/151 Test: malloc_3.srealloc case h
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_3_test" "srealloc case h"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_3.srealloc case h" start time: Jan 23 08:10 IST
+"malloc_3.srealloc case h" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case h
-Randomness seeded to: 803853517
+Randomness seeded to: 216523315
 ===============================================================================
 All tests passed (75 assertions in 1 test case)
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_3.srealloc case h" end time: Jan 23 08:10 IST
+"malloc_3.srealloc case h" end time: Jan 25 21:59 IST
 "malloc_3.srealloc case h" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1721,19 +1738,19 @@ Test Passed.
 86/151 Test: malloc_4.Sanity
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Sanity"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Sanity" start time: Jan 23 08:10 IST
+"malloc_4.Sanity" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Sanity
-Randomness seeded to: 319843866
+Randomness seeded to: 1535710353
 ===============================================================================
 All tests passed (18 assertions in 1 test case)
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Sanity" end time: Jan 23 08:10 IST
+"malloc_4.Sanity" end time: Jan 25 21:59 IST
 "malloc_4.Sanity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1741,11 +1758,11 @@ Test Passed.
 87/151 Test: malloc_4.Check size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Check size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Check size" start time: Jan 23 08:10 IST
+"malloc_4.Check size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Check size
-Randomness seeded to: 1733929461
+Randomness seeded to: 343349333
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -1767,10 +1784,10 @@ test cases:  1 |  0 passed | 1 failed
 assertions: 15 | 14 passed | 1 failed
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Check size" end time: Jan 23 08:10 IST
+"malloc_4.Check size" end time: Jan 25 21:59 IST
 "malloc_4.Check size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1778,11 +1795,11 @@ Test Failed.
 88/151 Test: malloc_4.0 size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "0 size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.0 size" start time: Jan 23 08:10 IST
+"malloc_4.0 size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: 0 size
-Randomness seeded to: 2605301834
+Randomness seeded to: 162912009
 ===============================================================================
 All tests passed (13 assertions in 1 test case)
 
@@ -1790,7 +1807,7 @@ All tests passed (13 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.0 size" end time: Jan 23 08:10 IST
+"malloc_4.0 size" end time: Jan 25 21:59 IST
 "malloc_4.0 size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1798,11 +1815,11 @@ Test Passed.
 89/151 Test: malloc_4.Max size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Max size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Max size" start time: Jan 23 08:10 IST
+"malloc_4.Max size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Max size
-Randomness seeded to: 3998916260
+Randomness seeded to: 577689530
 ===============================================================================
 All tests passed (26 assertions in 1 test case)
 
@@ -1810,7 +1827,7 @@ All tests passed (26 assertions in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Max size" end time: Jan 23 08:10 IST
+"malloc_4.Max size" end time: Jan 25 21:59 IST
 "malloc_4.Max size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1818,11 +1835,11 @@ Test Passed.
 90/151 Test: malloc_4.free
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "free"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.free" start time: Jan 23 08:10 IST
+"malloc_4.free" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free
-Randomness seeded to: 2908497494
+Randomness seeded to: 4082136817
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -1844,10 +1861,10 @@ test cases:  1 | 1 failed
 assertions: 10 | 9 passed | 1 failed
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.free" end time: Jan 23 08:10 IST
+"malloc_4.free" end time: Jan 25 21:59 IST
 "malloc_4.free" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1855,11 +1872,11 @@ Test Failed.
 91/151 Test: malloc_4.free 2
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "free 2"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.free 2" start time: Jan 23 08:10 IST
+"malloc_4.free 2" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free 2
-Randomness seeded to: 2378586872
+Randomness seeded to: 307311215
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -1881,10 +1898,10 @@ test cases:  1 | 1 failed
 assertions: 10 | 9 passed | 1 failed
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.free 2" end time: Jan 23 08:10 IST
+"malloc_4.free 2" end time: Jan 25 21:59 IST
 "malloc_4.free 2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1892,11 +1909,11 @@ Test Failed.
 92/151 Test: malloc_4.free 3
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "free 3"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.free 3" start time: Jan 23 08:10 IST
+"malloc_4.free 3" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free 3
-Randomness seeded to: 2801669941
+Randomness seeded to: 3011234589
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -1918,10 +1935,10 @@ test cases:  1 | 1 failed
 assertions: 10 | 9 passed | 1 failed
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.free 3" end time: Jan 23 08:10 IST
+"malloc_4.free 3" end time: Jan 25 21:59 IST
 "malloc_4.free 3" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1929,11 +1946,11 @@ Test Failed.
 93/151 Test: malloc_4.free holes 1
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "free holes 1"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.free holes 1" start time: Jan 23 08:10 IST
+"malloc_4.free holes 1" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free holes 1
-Randomness seeded to: 3726142660
+Randomness seeded to: 2620273518
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -1958,7 +1975,7 @@ assertions: 12 | 11 passed | 1 failed
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.free holes 1" end time: Jan 23 08:10 IST
+"malloc_4.free holes 1" end time: Jan 25 21:59 IST
 "malloc_4.free holes 1" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1966,11 +1983,11 @@ Test Failed.
 94/151 Test: malloc_4.free holes 2
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "free holes 2"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.free holes 2" start time: Jan 23 08:10 IST
+"malloc_4.free holes 2" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free holes 2
-Randomness seeded to: 4288966880
+Randomness seeded to: 1565297519
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -1995,7 +2012,7 @@ assertions: 12 | 11 passed | 1 failed
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.free holes 2" end time: Jan 23 08:10 IST
+"malloc_4.free holes 2" end time: Jan 25 21:59 IST
 "malloc_4.free holes 2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2003,11 +2020,11 @@ Test Failed.
 95/151 Test: malloc_4.free holes 3
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "free holes 3"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.free holes 3" start time: Jan 23 08:10 IST
+"malloc_4.free holes 3" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: free holes 3
-Randomness seeded to: 3474087426
+Randomness seeded to: 2014901766
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -2029,10 +2046,10 @@ test cases:  1 |  0 passed | 1 failed
 assertions: 12 | 11 passed | 1 failed
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.free holes 3" end time: Jan 23 08:10 IST
+"malloc_4.free holes 3" end time: Jan 25 21:59 IST
 "malloc_4.free holes 3" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2040,19 +2057,19 @@ Test Failed.
 96/151 Test: malloc_4.Wilderness available
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Wilderness available"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Wilderness available" start time: Jan 23 08:10 IST
+"malloc_4.Wilderness available" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Wilderness available
-Randomness seeded to: 4281308770
+Randomness seeded to: 3527790015
 ===============================================================================
 All tests passed (46 assertions in 1 test case)
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Wilderness available" end time: Jan 23 08:10 IST
+"malloc_4.Wilderness available" end time: Jan 25 21:59 IST
 "malloc_4.Wilderness available" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2060,19 +2077,19 @@ Test Passed.
 97/151 Test: malloc_4.Wilderness available pad
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Wilderness available pad"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Wilderness available pad" start time: Jan 23 08:10 IST
+"malloc_4.Wilderness available pad" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Wilderness available pad
-Randomness seeded to: 667005840
+Randomness seeded to: 617748264
 ===============================================================================
 All tests passed (59 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Wilderness available pad" end time: Jan 23 08:10 IST
+"malloc_4.Wilderness available pad" end time: Jan 25 21:59 IST
 "malloc_4.Wilderness available pad" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2080,19 +2097,19 @@ Test Passed.
 98/151 Test: malloc_4.Large allocation
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Large allocation"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Large allocation" start time: Jan 23 08:10 IST
+"malloc_4.Large allocation" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Large allocation
-Randomness seeded to: 2406992631
+Randomness seeded to: 1996722337
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Large allocation" end time: Jan 23 08:10 IST
+"malloc_4.Large allocation" end time: Jan 25 21:59 IST
 "malloc_4.Large allocation" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2100,11 +2117,11 @@ Test Passed.
 99/151 Test: malloc_4.Large unaligned allocation
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Large unaligned allocation"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Large unaligned allocation" start time: Jan 23 08:10 IST
+"malloc_4.Large unaligned allocation" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Large unaligned allocation
-Randomness seeded to: 1852771816
+Randomness seeded to: 335706176
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -2129,7 +2146,7 @@ assertions: 9 | 8 passed | 1 failed
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Large unaligned allocation" end time: Jan 23 08:10 IST
+"malloc_4.Large unaligned allocation" end time: Jan 25 21:59 IST
 "malloc_4.Large unaligned allocation" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2137,11 +2154,11 @@ Test Failed.
 100/151 Test: malloc_4.Reuse
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Reuse"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Reuse" start time: Jan 23 08:10 IST
+"malloc_4.Reuse" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse
-Randomness seeded to: 2334084389
+Randomness seeded to: 2969633108
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
@@ -2149,7 +2166,7 @@ All tests passed (32 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Reuse" end time: Jan 23 08:10 IST
+"malloc_4.Reuse" end time: Jan 25 21:59 IST
 "malloc_4.Reuse" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2157,11 +2174,11 @@ Test Passed.
 101/151 Test: malloc_4.Reuse two blocks
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Reuse two blocks"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Reuse two blocks" start time: Jan 23 08:10 IST
+"malloc_4.Reuse two blocks" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks
-Randomness seeded to: 2595195139
+Randomness seeded to: 490622474
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -2183,10 +2200,10 @@ test cases:  1 |  0 passed | 1 failed
 assertions: 16 | 15 passed | 1 failed
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Reuse two blocks" end time: Jan 23 08:10 IST
+"malloc_4.Reuse two blocks" end time: Jan 25 21:59 IST
 "malloc_4.Reuse two blocks" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2194,11 +2211,11 @@ Test Failed.
 102/151 Test: malloc_4.Reuse two blocks reverse
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Reuse two blocks reverse"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Reuse two blocks reverse" start time: Jan 23 08:10 IST
+"malloc_4.Reuse two blocks reverse" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks reverse
-Randomness seeded to: 243824783
+Randomness seeded to: 149422125
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -2223,7 +2240,7 @@ assertions: 16 | 15 passed | 1 failed
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Reuse two blocks reverse" end time: Jan 23 08:10 IST
+"malloc_4.Reuse two blocks reverse" end time: Jan 25 21:59 IST
 "malloc_4.Reuse two blocks reverse" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2231,11 +2248,11 @@ Test Failed.
 103/151 Test: malloc_4.Reuse two blocks both
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Reuse two blocks both"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Reuse two blocks both" start time: Jan 23 08:10 IST
+"malloc_4.Reuse two blocks both" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks both
-Randomness seeded to: 1349761673
+Randomness seeded to: 2668899271
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -2260,7 +2277,7 @@ assertions: 15 | 14 passed | 1 failed
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Reuse two blocks both" end time: Jan 23 08:10 IST
+"malloc_4.Reuse two blocks both" end time: Jan 25 21:59 IST
 "malloc_4.Reuse two blocks both" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2268,11 +2285,11 @@ Test Failed.
 104/151 Test: malloc_4.Reuse two blocks sizes small
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Reuse two blocks sizes small"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Reuse two blocks sizes small" start time: Jan 23 08:10 IST
+"malloc_4.Reuse two blocks sizes small" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks sizes small
-Randomness seeded to: 2903111605
+Randomness seeded to: 1761583093
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -2294,10 +2311,10 @@ test cases:  1 |  0 passed | 1 failed
 assertions: 15 | 14 passed | 1 failed
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Reuse two blocks sizes small" end time: Jan 23 08:10 IST
+"malloc_4.Reuse two blocks sizes small" end time: Jan 25 21:59 IST
 "malloc_4.Reuse two blocks sizes small" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2305,11 +2322,11 @@ Test Failed.
 105/151 Test: malloc_4.Reuse two blocks sizes small reversed
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Reuse two blocks sizes small reversed"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Reuse two blocks sizes small reversed" start time: Jan 23 08:10 IST
+"malloc_4.Reuse two blocks sizes small reversed" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks sizes small reversed
-Randomness seeded to: 1781085177
+Randomness seeded to: 3134581530
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -2331,10 +2348,10 @@ test cases:  1 |  0 passed | 1 failed
 assertions: 15 | 14 passed | 1 failed
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Reuse two blocks sizes small reversed" end time: Jan 23 08:10 IST
+"malloc_4.Reuse two blocks sizes small reversed" end time: Jan 25 21:59 IST
 "malloc_4.Reuse two blocks sizes small reversed" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2342,11 +2359,11 @@ Test Failed.
 106/151 Test: malloc_4.Reuse two blocks sizes large
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Reuse two blocks sizes large"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Reuse two blocks sizes large" start time: Jan 23 08:10 IST
+"malloc_4.Reuse two blocks sizes large" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Reuse two blocks sizes large
-Randomness seeded to: 3276276173
+Randomness seeded to: 1591960705
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -2368,10 +2385,10 @@ test cases:  1 |  0 passed | 1 failed
 assertions: 15 | 14 passed | 1 failed
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Reuse two blocks sizes large" end time: Jan 23 08:10 IST
+"malloc_4.Reuse two blocks sizes large" end time: Jan 25 21:59 IST
 "malloc_4.Reuse two blocks sizes large" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2379,11 +2396,11 @@ Test Failed.
 107/151 Test: malloc_4.scalloc
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "scalloc"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.scalloc" start time: Jan 23 08:10 IST
+"malloc_4.scalloc" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc
-Randomness seeded to: 4013842158
+Randomness seeded to: 1038947250
 ===============================================================================
 All tests passed (51 assertions in 1 test case)
 
@@ -2391,7 +2408,7 @@ All tests passed (51 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.scalloc" end time: Jan 23 08:10 IST
+"malloc_4.scalloc" end time: Jan 25 21:59 IST
 "malloc_4.scalloc" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2399,19 +2416,19 @@ Test Passed.
 108/151 Test: malloc_4.scalloc taint
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "scalloc taint"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.scalloc taint" start time: Jan 23 08:10 IST
+"malloc_4.scalloc taint" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc taint
-Randomness seeded to: 2621992304
+Randomness seeded to: 464746371
 ===============================================================================
 All tests passed (232 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.scalloc taint" end time: Jan 23 08:10 IST
+"malloc_4.scalloc taint" end time: Jan 25 21:59 IST
 "malloc_4.scalloc taint" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2419,11 +2436,11 @@ Test Passed.
 109/151 Test: malloc_4.scalloc 0 size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "scalloc 0 size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.scalloc 0 size" start time: Jan 23 08:10 IST
+"malloc_4.scalloc 0 size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc 0 size
-Randomness seeded to: 214880864
+Randomness seeded to: 2542501079
 ===============================================================================
 All tests passed (21 assertions in 1 test case)
 
@@ -2431,7 +2448,7 @@ All tests passed (21 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.scalloc 0 size" end time: Jan 23 08:10 IST
+"malloc_4.scalloc 0 size" end time: Jan 25 21:59 IST
 "malloc_4.scalloc 0 size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2439,11 +2456,11 @@ Test Passed.
 110/151 Test: malloc_4.scalloc Max size num
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "scalloc Max size num"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.scalloc Max size num" start time: Jan 23 08:10 IST
+"malloc_4.scalloc Max size num" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc Max size num
-Randomness seeded to: 1218854366
+Randomness seeded to: 762618783
 ===============================================================================
 All tests passed (27 assertions in 1 test case)
 
@@ -2451,7 +2468,7 @@ All tests passed (27 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.scalloc Max size num" end time: Jan 23 08:10 IST
+"malloc_4.scalloc Max size num" end time: Jan 25 21:59 IST
 "malloc_4.scalloc Max size num" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2459,19 +2476,19 @@ Test Passed.
 111/151 Test: malloc_4.scalloc Max size size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "scalloc Max size size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.scalloc Max size size" start time: Jan 23 08:10 IST
+"malloc_4.scalloc Max size size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc Max size size
-Randomness seeded to: 4276664171
+Randomness seeded to: 1775243781
 ===============================================================================
 All tests passed (27 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.scalloc Max size size" end time: Jan 23 08:10 IST
+"malloc_4.scalloc Max size size" end time: Jan 25 21:59 IST
 "malloc_4.scalloc Max size size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2479,19 +2496,19 @@ Test Passed.
 112/151 Test: malloc_4.scalloc Max size both
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "scalloc Max size both"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.scalloc Max size both" start time: Jan 23 08:10 IST
+"malloc_4.scalloc Max size both" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: scalloc Max size both
-Randomness seeded to: 75275939
+Randomness seeded to: 933562690
 ===============================================================================
 All tests passed (35 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.scalloc Max size both" end time: Jan 23 08:10 IST
+"malloc_4.scalloc Max size both" end time: Jan 25 21:59 IST
 "malloc_4.scalloc Max size both" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2499,19 +2516,19 @@ Test Passed.
 113/151 Test: malloc_4.Split block
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Split block"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Split block" start time: Jan 23 08:10 IST
+"malloc_4.Split block" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Split block
-Randomness seeded to: 2351498259
+Randomness seeded to: 3690473855
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Split block" end time: Jan 23 08:10 IST
+"malloc_4.Split block" end time: Jan 25 21:59 IST
 "malloc_4.Split block" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2519,19 +2536,19 @@ Test Passed.
 114/151 Test: malloc_4.Split block under threshold
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Split block under threshold"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Split block under threshold" start time: Jan 23 08:10 IST
+"malloc_4.Split block under threshold" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Split block under threshold
-Randomness seeded to: 1375780619
+Randomness seeded to: 3777863138
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Split block under threshold" end time: Jan 23 08:10 IST
+"malloc_4.Split block under threshold" end time: Jan 25 21:59 IST
 "malloc_4.Split block under threshold" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2539,19 +2556,19 @@ Test Passed.
 115/151 Test: malloc_4.Split block threshold
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Split block threshold"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Split block threshold" start time: Jan 23 08:10 IST
+"malloc_4.Split block threshold" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Split block threshold
-Randomness seeded to: 3371807093
+Randomness seeded to: 3697599050
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Split block threshold" end time: Jan 23 08:10 IST
+"malloc_4.Split block threshold" end time: Jan 25 21:59 IST
 "malloc_4.Split block threshold" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2559,19 +2576,19 @@ Test Passed.
 116/151 Test: malloc_4.Merge with prev block
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Merge with prev block"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Merge with prev block" start time: Jan 23 08:10 IST
+"malloc_4.Merge with prev block" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Merge with prev block
-Randomness seeded to: 1257530299
+Randomness seeded to: 2384081328
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Merge with prev block" end time: Jan 23 08:10 IST
+"malloc_4.Merge with prev block" end time: Jan 25 21:59 IST
 "malloc_4.Merge with prev block" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2579,19 +2596,19 @@ Test Passed.
 117/151 Test: malloc_4.Merge with prev block pad
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Merge with prev block pad"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Merge with prev block pad" start time: Jan 23 08:10 IST
+"malloc_4.Merge with prev block pad" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Merge with prev block pad
-Randomness seeded to: 202299846
+Randomness seeded to: 2010727570
 ===============================================================================
 All tests passed (58 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Merge with prev block pad" end time: Jan 23 08:10 IST
+"malloc_4.Merge with prev block pad" end time: Jan 25 21:59 IST
 "malloc_4.Merge with prev block pad" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2599,11 +2616,11 @@ Test Passed.
 118/151 Test: malloc_4.Merge with next block
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Merge with next block"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Merge with next block" start time: Jan 23 08:10 IST
+"malloc_4.Merge with next block" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Merge with next block
-Randomness seeded to: 2480603423
+Randomness seeded to: 2447378391
 ===============================================================================
 All tests passed (32 assertions in 1 test case)
 
@@ -2611,7 +2628,7 @@ All tests passed (32 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Merge with next block" end time: Jan 23 08:10 IST
+"malloc_4.Merge with next block" end time: Jan 25 21:59 IST
 "malloc_4.Merge with next block" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2619,11 +2636,11 @@ Test Passed.
 119/151 Test: malloc_4.Merge with next block pad
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Merge with next block pad"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Merge with next block pad" start time: Jan 23 08:10 IST
+"malloc_4.Merge with next block pad" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Merge with next block pad
-Randomness seeded to: 515049765
+Randomness seeded to: 1296348186
 ===============================================================================
 All tests passed (58 assertions in 1 test case)
 
@@ -2631,7 +2648,7 @@ All tests passed (58 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Merge with next block pad" end time: Jan 23 08:10 IST
+"malloc_4.Merge with next block pad" end time: Jan 25 21:59 IST
 "malloc_4.Merge with next block pad" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2639,11 +2656,11 @@ Test Passed.
 120/151 Test: malloc_4.Merge with both blocks
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Merge with both blocks"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Merge with both blocks" start time: Jan 23 08:10 IST
+"malloc_4.Merge with both blocks" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Merge with both blocks
-Randomness seeded to: 4168517067
+Randomness seeded to: 486800970
 ===============================================================================
 All tests passed (47 assertions in 1 test case)
 
@@ -2651,7 +2668,7 @@ All tests passed (47 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Merge with both blocks" end time: Jan 23 08:10 IST
+"malloc_4.Merge with both blocks" end time: Jan 25 21:59 IST
 "malloc_4.Merge with both blocks" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2659,19 +2676,19 @@ Test Passed.
 121/151 Test: malloc_4.Merge with both blocks pad
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Merge with both blocks pad"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Merge with both blocks pad" start time: Jan 23 08:10 IST
+"malloc_4.Merge with both blocks pad" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Merge with both blocks pad
-Randomness seeded to: 487731844
+Randomness seeded to: 3593754325
 ===============================================================================
 All tests passed (73 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Merge with both blocks pad" end time: Jan 23 08:10 IST
+"malloc_4.Merge with both blocks pad" end time: Jan 25 21:59 IST
 "malloc_4.Merge with both blocks pad" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2679,19 +2696,19 @@ Test Passed.
 122/151 Test: malloc_4.realloc
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "realloc"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.realloc" start time: Jan 23 08:10 IST
+"malloc_4.realloc" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: realloc
-Randomness seeded to: 1791186381
+Randomness seeded to: 3336104485
 ===============================================================================
 All tests passed (36 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.realloc" end time: Jan 23 08:10 IST
+"malloc_4.realloc" end time: Jan 25 21:59 IST
 "malloc_4.realloc" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2699,19 +2716,19 @@ Test Passed.
 123/151 Test: malloc_4.realloc shrink
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "realloc shrink"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.realloc shrink" start time: Jan 23 08:10 IST
+"malloc_4.realloc shrink" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: realloc shrink
-Randomness seeded to: 3656162431
+Randomness seeded to: 3927445580
 ===============================================================================
 All tests passed (36 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.realloc shrink" end time: Jan 23 08:10 IST
+"malloc_4.realloc shrink" end time: Jan 25 21:59 IST
 "malloc_4.realloc shrink" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2719,19 +2736,19 @@ Test Passed.
 124/151 Test: malloc_4.srealloc Max size
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc Max size"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc Max size" start time: Jan 23 08:10 IST
+"malloc_4.srealloc Max size" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc Max size
-Randomness seeded to: 2085517153
+Randomness seeded to: 2860934903
 ===============================================================================
 All tests passed (35 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc Max size" end time: Jan 23 08:10 IST
+"malloc_4.srealloc Max size" end time: Jan 25 21:59 IST
 "malloc_4.srealloc Max size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2739,11 +2756,11 @@ Test Passed.
 125/151 Test: malloc_4.srealloc case a
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case a"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case a" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case a" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case a
-Randomness seeded to: 214607457
+Randomness seeded to: 895408708
 ===============================================================================
 All tests passed (112 assertions in 1 test case)
 
@@ -2751,7 +2768,7 @@ All tests passed (112 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case a" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case a" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case a" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2759,11 +2776,11 @@ Test Passed.
 126/151 Test: malloc_4.srealloc case a split
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case a split"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case a split" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case a split" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case a split
-Randomness seeded to: 2591195402
+Randomness seeded to: 2445680002
 ===============================================================================
 All tests passed (58 assertions in 1 test case)
 
@@ -2771,7 +2788,7 @@ All tests passed (58 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case a split" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case a split" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case a split" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2779,11 +2796,11 @@ Test Passed.
 127/151 Test: malloc_4.srealloc case a mmap
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case a mmap"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case a mmap" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case a mmap" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case a mmap
-Randomness seeded to: 2142541226
+Randomness seeded to: 2817262956
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -2805,10 +2822,10 @@ test cases:      1 |      0 passed | 1 failed
 assertions: 131100 | 131099 passed | 1 failed
 
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.srealloc case a mmap" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case a mmap" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case a mmap" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2816,19 +2833,19 @@ Test Failed.
 128/151 Test: malloc_4.srealloc case b
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case b"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case b" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case b" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case b
-Randomness seeded to: 1674239013
+Randomness seeded to: 3980042974
 ===============================================================================
 All tests passed (106 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case b" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case b" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case b" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2836,19 +2853,19 @@ Test Passed.
 129/151 Test: malloc_4.srealloc case b metadata
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case b metadata"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case b metadata" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case b metadata" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case b metadata
-Randomness seeded to: 3632227154
+Randomness seeded to: 3665582356
 ===============================================================================
 All tests passed (66 assertions in 1 test case)
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case b metadata" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case b metadata" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case b metadata" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2856,19 +2873,36 @@ Test Passed.
 130/151 Test: malloc_4.srealloc case b split
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case b split"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case b split" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case b split" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case b split
-Randomness seeded to: 3089209600
+Randomness seeded to: 1524182162
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_4_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case b split
+-------------------------------------------------------------------------------
+/home/rotem/os/os-hw4/tests/malloc_4_test_srealloc_cases.cpp:222
+...............................................................................
+
+/home/rotem/os/os-hw4/tests/malloc_4_test_srealloc_cases.cpp:245: FAILED:
+  REQUIRE( _num_allocated_blocks() == 2 )
+with expansion:
+  3 == 2
+
 ===============================================================================
-All tests passed (66 assertions in 1 test case)
+test cases:  1 |  0 passed | 1 failed
+assertions: 23 | 22 passed | 1 failed
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
-Test Passed.
-"malloc_4.srealloc case b split" end time: Jan 23 08:10 IST
+Test Failed.
+"malloc_4.srealloc case b split" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case b split" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2876,19 +2910,19 @@ Test Passed.
 131/151 Test: malloc_4.srealloc case b wilderness
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case b wilderness"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case b wilderness" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case b wilderness" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case b wilderness
-Randomness seeded to: 1930639324
+Randomness seeded to: 1407671805
 ===============================================================================
 All tests passed (65 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case b wilderness" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case b wilderness" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case b wilderness" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2896,11 +2930,11 @@ Test Passed.
 132/151 Test: malloc_4.srealloc case b wilderness 2
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case b wilderness 2"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case b wilderness 2" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case b wilderness 2" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case b wilderness 2
-Randomness seeded to: 534057209
+Randomness seeded to: 1624285125
 ===============================================================================
 All tests passed (97 assertions in 1 test case)
 
@@ -2908,7 +2942,7 @@ All tests passed (97 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case b wilderness 2" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case b wilderness 2" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case b wilderness 2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2916,11 +2950,11 @@ Test Passed.
 133/151 Test: malloc_4.srealloc case c
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case c"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case c" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case c" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case c
-Randomness seeded to: 1787650554
+Randomness seeded to: 644478810
 ===============================================================================
 All tests passed (90 assertions in 1 test case)
 
@@ -2928,7 +2962,7 @@ All tests passed (90 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case c" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case c" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case c" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2936,19 +2970,19 @@ Test Passed.
 134/151 Test: malloc_4.srealloc case c 2
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case c 2"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case c 2" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case c 2" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case c 2
-Randomness seeded to: 992003141
+Randomness seeded to: 1805555035
 ===============================================================================
 All tests passed (97 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case c 2" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case c 2" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case c 2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2956,19 +2990,19 @@ Test Passed.
 135/151 Test: malloc_4.srealloc case d
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case d"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case d" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case d" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case d
-Randomness seeded to: 1986445198
+Randomness seeded to: 2323608913
 ===============================================================================
 All tests passed (112 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case d" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case d" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case d" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2976,19 +3010,19 @@ Test Passed.
 136/151 Test: malloc_4.srealloc case d metadata
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case d metadata"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case d metadata" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case d metadata" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case d metadata
-Randomness seeded to: 3838148028
+Randomness seeded to: 828219202
 ===============================================================================
 All tests passed (72 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case d metadata" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case d metadata" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case d metadata" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2996,19 +3030,19 @@ Test Passed.
 137/151 Test: malloc_4.srealloc case d split
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case d split"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case d split" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case d split" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case d split
-Randomness seeded to: 3715340297
+Randomness seeded to: 2565949309
 ===============================================================================
 All tests passed (72 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case d split" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case d split" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case d split" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3016,11 +3050,11 @@ Test Passed.
 138/151 Test: malloc_4.srealloc case e
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case e"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case e" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case e" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case e
-Randomness seeded to: 253923163
+Randomness seeded to: 535985877
 ===============================================================================
 All tests passed (74 assertions in 1 test case)
 
@@ -3028,7 +3062,7 @@ All tests passed (74 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case e" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case e" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case e" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3036,11 +3070,11 @@ Test Passed.
 139/151 Test: malloc_4.srealloc case e no pad
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case e no pad"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case e no pad" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case e no pad" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case e no pad
-Randomness seeded to: 2052825693
+Randomness seeded to: 424453266
 ===============================================================================
 All tests passed (73 assertions in 1 test case)
 
@@ -3048,7 +3082,7 @@ All tests passed (73 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case e no pad" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case e no pad" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case e no pad" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3056,11 +3090,11 @@ Test Passed.
 140/151 Test: malloc_4.srealloc case e split
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case e split"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case e split" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case e split" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case e split
-Randomness seeded to: 173801505
+Randomness seeded to: 739137000
 ===============================================================================
 All tests passed (146 assertions in 1 test case)
 
@@ -3068,7 +3102,7 @@ All tests passed (146 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case e split" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case e split" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case e split" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3076,11 +3110,11 @@ Test Passed.
 141/151 Test: malloc_4.srealloc case fi
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case fi"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case fi" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case fi" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case fi
-Randomness seeded to: 2516002335
+Randomness seeded to: 1614591388
 ===============================================================================
 All tests passed (73 assertions in 1 test case)
 
@@ -3088,7 +3122,7 @@ All tests passed (73 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case fi" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case fi" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case fi" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3096,11 +3130,11 @@ Test Passed.
 142/151 Test: malloc_4.srealloc case fii
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case fii"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case fii" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case fii" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case fii
-Randomness seeded to: 2793200673
+Randomness seeded to: 3962979409
 ===============================================================================
 All tests passed (79 assertions in 1 test case)
 
@@ -3108,7 +3142,7 @@ All tests passed (79 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case fii" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case fii" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case fii" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3116,11 +3150,11 @@ Test Passed.
 143/151 Test: malloc_4.srealloc case g
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case g"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case g" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case g" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case g
-Randomness seeded to: 1166147849
+Randomness seeded to: 2805144181
 ===============================================================================
 All tests passed (74 assertions in 1 test case)
 
@@ -3128,7 +3162,7 @@ All tests passed (74 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case g" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case g" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case g" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3136,19 +3170,19 @@ Test Passed.
 144/151 Test: malloc_4.srealloc case h
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "srealloc case h"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.srealloc case h" start time: Jan 23 08:10 IST
+"malloc_4.srealloc case h" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: srealloc case h
-Randomness seeded to: 2029384934
+Randomness seeded to: 2100688554
 ===============================================================================
 All tests passed (75 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.srealloc case h" end time: Jan 23 08:10 IST
+"malloc_4.srealloc case h" end time: Jan 25 21:59 IST
 "malloc_4.srealloc case h" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3156,11 +3190,11 @@ Test Passed.
 145/151 Test: malloc_4.Huge pages smalloc
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Huge pages smalloc"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Huge pages smalloc" start time: Jan 23 08:10 IST
+"malloc_4.Huge pages smalloc" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Huge pages smalloc
-Randomness seeded to: 2989610893
+Randomness seeded to: 647496371
 ===============================================================================
 All tests passed (37 assertions in 1 test case)
 
@@ -3168,7 +3202,7 @@ All tests passed (37 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Huge pages smalloc" end time: Jan 23 08:10 IST
+"malloc_4.Huge pages smalloc" end time: Jan 25 21:59 IST
 "malloc_4.Huge pages smalloc" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3176,11 +3210,11 @@ Test Passed.
 146/151 Test: malloc_4.Huge pages smalloc realloc
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Huge pages smalloc realloc"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Huge pages smalloc realloc" start time: Jan 23 08:10 IST
+"malloc_4.Huge pages smalloc realloc" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Huge pages smalloc realloc
-Randomness seeded to: 183808305
+Randomness seeded to: 3752450169
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -3202,10 +3236,10 @@ test cases:  1 |  0 passed | 1 failed
 assertions: 22 | 21 passed | 1 failed
 
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Huge pages smalloc realloc" end time: Jan 23 08:10 IST
+"malloc_4.Huge pages smalloc realloc" end time: Jan 25 21:59 IST
 "malloc_4.Huge pages smalloc realloc" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3213,11 +3247,11 @@ Test Failed.
 147/151 Test: malloc_4.Huge pages scalloc
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Huge pages scalloc"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Huge pages scalloc" start time: Jan 23 08:10 IST
+"malloc_4.Huge pages scalloc" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Huge pages scalloc
-Randomness seeded to: 420612624
+Randomness seeded to: 3354591698
 ===============================================================================
 All tests passed (37 assertions in 1 test case)
 
@@ -3225,7 +3259,7 @@ All tests passed (37 assertions in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"malloc_4.Huge pages scalloc" end time: Jan 23 08:10 IST
+"malloc_4.Huge pages scalloc" end time: Jan 25 21:59 IST
 "malloc_4.Huge pages scalloc" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3233,11 +3267,11 @@ Test Passed.
 148/151 Test: malloc_4.Huge pages scalloc realloc
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Huge pages scalloc realloc"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Huge pages scalloc realloc" start time: Jan 23 08:10 IST
+"malloc_4.Huge pages scalloc realloc" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Huge pages scalloc realloc
-Randomness seeded to: 3000149082
+Randomness seeded to: 1302367283
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -3262,7 +3296,7 @@ assertions: 25 | 24 passed | 1 failed
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Huge pages scalloc realloc" end time: Jan 23 08:10 IST
+"malloc_4.Huge pages scalloc realloc" end time: Jan 25 21:59 IST
 "malloc_4.Huge pages scalloc realloc" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3270,11 +3304,11 @@ Test Failed.
 149/151 Test: malloc_4.Dynamic mmap
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Dynamic mmap"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Dynamic mmap" start time: Jan 23 08:10 IST
+"malloc_4.Dynamic mmap" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Dynamic mmap
-Randomness seeded to: 2997601876
+Randomness seeded to: 916914611
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -3299,7 +3333,7 @@ assertions: 25 | 24 passed | 1 failed
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Dynamic mmap" end time: Jan 23 08:10 IST
+"malloc_4.Dynamic mmap" end time: Jan 25 21:59 IST
 "malloc_4.Dynamic mmap" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3307,11 +3341,11 @@ Test Failed.
 150/151 Test: malloc_4.Dynamic mmap 2
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Dynamic mmap 2"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Dynamic mmap 2" start time: Jan 23 08:10 IST
+"malloc_4.Dynamic mmap 2" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Dynamic mmap 2
-Randomness seeded to: 739276979
+Randomness seeded to: 2782446159
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -3333,10 +3367,10 @@ test cases:  1 |  0 passed | 1 failed
 assertions: 25 | 24 passed | 1 failed
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Dynamic mmap 2" end time: Jan 23 08:10 IST
+"malloc_4.Dynamic mmap 2" end time: Jan 25 21:59 IST
 "malloc_4.Dynamic mmap 2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3344,11 +3378,11 @@ Test Failed.
 151/151 Test: malloc_4.Dynamic mmap threshold max
 Command: "/home/rotem/os/os-hw4/build/tests/malloc_4_test" "Dynamic mmap threshold max"
 Directory: /home/rotem/os/os-hw4/build/tests
-"malloc_4.Dynamic mmap threshold max" start time: Jan 23 08:10 IST
+"malloc_4.Dynamic mmap threshold max" start time: Jan 25 21:59 IST
 Output:
 ----------------------------------------------------------
 Filters: Dynamic mmap threshold max
-Randomness seeded to: 2379324793
+Randomness seeded to: 1308762045
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 malloc_4_test is a Catch2 v3.0.1 host application.
@@ -3370,11 +3404,11 @@ test cases:  1 |  0 passed | 1 failed
 assertions: 25 | 24 passed | 1 failed
 
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"malloc_4.Dynamic mmap threshold max" end time: Jan 23 08:10 IST
+"malloc_4.Dynamic mmap threshold max" end time: Jan 25 21:59 IST
 "malloc_4.Dynamic mmap threshold max" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jan 23 08:10 IST
+End testing: Jan 25 21:59 IST

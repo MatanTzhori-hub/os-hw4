@@ -305,10 +305,11 @@ void* AllocedBlocksList::SplitAndInsert(size_t new_size, MallocMetadata* old_blo
     }
     data_to_meta(free_block)->is_free = 1;
 
-    MallocMetadata* next_free = GetNextIfFree(data_to_meta(free_block));
-    if(next_free != NULL){
-        UnionAndInsert(data_to_meta(free_block), next_free, NULL);
-    }
+    // Don't merge after split
+    // MallocMetadata* next_free = GetNextIfFree(data_to_meta(free_block));
+    // if(next_free != NULL){
+    //     UnionAndInsert(data_to_meta(free_block), next_free, NULL);
+    // }
     insertBlock(new_size, old_block);
     return meta_to_data(old_block);
 }

@@ -1,4 +1,5 @@
 68:malloc_3.srealloc case a mmap
+71:malloc_3.srealloc case b split
 87:malloc_4.Check size
 90:malloc_4.free
 91:malloc_4.free 2
@@ -14,6 +15,7 @@
 105:malloc_4.Reuse two blocks sizes small reversed
 106:malloc_4.Reuse two blocks sizes large
 127:malloc_4.srealloc case a mmap
+130:malloc_4.srealloc case b split
 146:malloc_4.Huge pages smalloc realloc
 148:malloc_4.Huge pages scalloc realloc
 149:malloc_4.Dynamic mmap

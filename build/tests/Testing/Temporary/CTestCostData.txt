@@ -1,4 +1,4 @@
-malloc_1.Sanity 20 0.00072658
+malloc_1.Sanity 21 0.00157852
 malloc_1.Check 0 1
 malloc_1.0 0 1
 malloc_1.Max 0 1
@@ -9,27 +9,27 @@ malloc_1.Max 0 1
 malloc_1.Check 0 1
 malloc_1.0 0 1
 malloc_1.Max 0 1
-malloc_2.Sanity 16 0.000990613
+malloc_2.Sanity 17 0.00198823
 malloc_2.Check 0 0
 malloc_2.0 0 0
 malloc_2.Max 0 0
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_1.Check 0 1
 malloc_1.0 0 1
@@ -41,19 +41,19 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 0
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_1.Check 0 1
 malloc_1.0 0 1
@@ -61,19 +61,19 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_1.Check 0 1
 malloc_1.0 0 1
@@ -81,19 +81,19 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_1.Check 0 1
 malloc_1.0 0 1
@@ -101,47 +101,47 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
-malloc_3.Sanity 13 0.00135532
+malloc_3.Sanity 14 0.00114294
 malloc_3.Check 0 1
 malloc_3.0 0 1
 malloc_3.Max 0 1
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
 malloc_3.Wilderness 0 1
 malloc_3.Wilderness 0 0
 malloc_3.Large 0 1
 malloc_3.Large 0 0
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
 malloc_3.Split 0 1
 malloc_3.Split 0 0
 malloc_3.Split 0 0
@@ -151,8 +151,8 @@ malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
-malloc_3.realloc 1 0.0031449
-malloc_3.realloc 1 0.0031449
+malloc_3.realloc 1 0.0127378
+malloc_3.realloc 1 0.0127378
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
@@ -180,43 +180,43 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_3.Check 0 1
 malloc_3.0 0 1
 malloc_3.Max 0 1
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
 malloc_3.Wilderness 0 1
 malloc_3.Wilderness 0 0
 malloc_3.Large 0 1
 malloc_3.Large 0 0
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
 malloc_3.Split 0 1
 malloc_3.Split 0 0
 malloc_3.Split 0 0
@@ -226,7 +226,7 @@ malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
-malloc_3.realloc 1 0.0031449
+malloc_3.realloc 1 0.0127378
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
@@ -248,7 +248,7 @@ malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
-malloc_4.Sanity 8 0.00178284
+malloc_4.Sanity 9 0.000535667
 malloc_4.Check 0 0
 malloc_4.0 0 1
 malloc_4.Max 0 1
@@ -262,19 +262,19 @@ malloc_4.Wilderness 0 1
 malloc_4.Wilderness 0 0
 malloc_4.Large 0 1
 malloc_4.Large 0 0
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
 malloc_4.Split 0 1
 malloc_4.Split 0 0
 malloc_4.Split 0 0
@@ -284,8 +284,8 @@ malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
-malloc_4.realloc 1 0.003509
-malloc_4.realloc 1 0.003509
+malloc_4.realloc 1 0.0058589
+malloc_4.realloc 1 0.0058589
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
@@ -320,43 +320,43 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_3.Check 0 1
 malloc_3.0 0 1
 malloc_3.Max 0 1
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
 malloc_3.Wilderness 0 1
 malloc_3.Wilderness 0 0
 malloc_3.Large 0 1
 malloc_3.Large 0 0
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
 malloc_3.Split 0 1
 malloc_3.Split 0 0
 malloc_3.Split 0 0
@@ -366,7 +366,7 @@ malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
-malloc_3.realloc 1 0.0031449
+malloc_3.realloc 1 0.0127378
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
@@ -400,17 +400,17 @@ malloc_4.Wilderness 0 1
 malloc_4.Wilderness 0 0
 malloc_4.Large 0 1
 malloc_4.Large 0 0
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
 malloc_4.Split 0 1
 malloc_4.Split 0 0
 malloc_4.Split 0 0
@@ -420,7 +420,7 @@ malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
-malloc_4.realloc 1 0.003509
+malloc_4.realloc 1 0.0058589
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
@@ -455,43 +455,43 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_3.Check 0 1
 malloc_3.0 0 1
 malloc_3.Max 0 1
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
 malloc_3.Wilderness 0 1
 malloc_3.Wilderness 0 0
 malloc_3.Large 0 1
 malloc_3.Large 0 0
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
 malloc_3.Split 0 1
 malloc_3.Split 0 0
 malloc_3.Split 0 0
@@ -501,7 +501,7 @@ malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
-malloc_3.realloc 1 0.0031449
+malloc_3.realloc 1 0.0127378
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
@@ -535,17 +535,17 @@ malloc_4.Wilderness 0 1
 malloc_4.Wilderness 0 0
 malloc_4.Large 0 1
 malloc_4.Large 0 0
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
 malloc_4.Split 0 1
 malloc_4.Split 0 0
 malloc_4.Split 0 0
@@ -555,7 +555,7 @@ malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
-malloc_4.realloc 1 0.003509
+malloc_4.realloc 1 0.0058589
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
@@ -590,43 +590,43 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_3.Check 0 1
 malloc_3.0 0 1
 malloc_3.Max 0 1
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
 malloc_3.Wilderness 0 1
 malloc_3.Wilderness 0 0
 malloc_3.Large 0 1
 malloc_3.Large 0 0
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
 malloc_3.Split 0 1
 malloc_3.Split 0 0
 malloc_3.Split 0 0
@@ -636,7 +636,7 @@ malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
-malloc_3.realloc 1 0.0031449
+malloc_3.realloc 1 0.0127378
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
@@ -670,17 +670,17 @@ malloc_4.Wilderness 0 1
 malloc_4.Wilderness 0 0
 malloc_4.Large 0 1
 malloc_4.Large 0 0
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
 malloc_4.Split 0 1
 malloc_4.Split 0 0
 malloc_4.Split 0 0
@@ -690,7 +690,7 @@ malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
-malloc_4.realloc 1 0.003509
+malloc_4.realloc 1 0.0058589
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
@@ -725,43 +725,43 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_3.Check 0 1
 malloc_3.0 0 1
 malloc_3.Max 0 1
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
 malloc_3.Wilderness 0 1
 malloc_3.Wilderness 0 0
 malloc_3.Large 0 1
 malloc_3.Large 0 0
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
 malloc_3.Split 0 1
 malloc_3.Split 0 0
 malloc_3.Split 0 0
@@ -771,7 +771,7 @@ malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
-malloc_3.realloc 1 0.0031449
+malloc_3.realloc 1 0.0127378
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
@@ -805,17 +805,17 @@ malloc_4.Wilderness 0 1
 malloc_4.Wilderness 0 0
 malloc_4.Large 0 1
 malloc_4.Large 0 0
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
 malloc_4.Split 0 1
 malloc_4.Split 0 0
 malloc_4.Split 0 0
@@ -825,7 +825,7 @@ malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
-malloc_4.realloc 1 0.003509
+malloc_4.realloc 1 0.0058589
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
@@ -860,43 +860,43 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_3.Check 0 1
 malloc_3.0 0 1
 malloc_3.Max 0 1
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
 malloc_3.Wilderness 0 1
 malloc_3.Wilderness 0 0
 malloc_3.Large 0 1
 malloc_3.Large 0 0
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
 malloc_3.Split 0 1
 malloc_3.Split 0 0
 malloc_3.Split 0 0
@@ -906,7 +906,7 @@ malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
-malloc_3.realloc 1 0.0031449
+malloc_3.realloc 1 0.0127378
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
@@ -940,17 +940,17 @@ malloc_4.Wilderness 0 1
 malloc_4.Wilderness 0 0
 malloc_4.Large 0 1
 malloc_4.Large 0 0
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
 malloc_4.Split 0 1
 malloc_4.Split 0 0
 malloc_4.Split 0 0
@@ -960,7 +960,7 @@ malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
-malloc_4.realloc 1 0.003509
+malloc_4.realloc 1 0.0058589
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
@@ -995,43 +995,43 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_3.Check 0 1
 malloc_3.0 0 1
 malloc_3.Max 0 1
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
 malloc_3.Wilderness 0 1
 malloc_3.Wilderness 0 0
 malloc_3.Large 0 1
 malloc_3.Large 0 0
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
 malloc_3.Split 0 1
 malloc_3.Split 0 0
 malloc_3.Split 0 0
@@ -1041,7 +1041,7 @@ malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
-malloc_3.realloc 1 0.0031449
+malloc_3.realloc 1 0.0127378
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
@@ -1075,17 +1075,17 @@ malloc_4.Wilderness 0 1
 malloc_4.Wilderness 0 0
 malloc_4.Large 0 1
 malloc_4.Large 0 0
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
 malloc_4.Split 0 1
 malloc_4.Split 0 0
 malloc_4.Split 0 0
@@ -1095,7 +1095,7 @@ malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
-malloc_4.realloc 1 0.003509
+malloc_4.realloc 1 0.0058589
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
@@ -1130,43 +1130,43 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_3.Check 0 1
 malloc_3.0 0 1
 malloc_3.Max 0 1
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
 malloc_3.Wilderness 0 1
 malloc_3.Wilderness 0 0
 malloc_3.Large 0 1
 malloc_3.Large 0 0
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
 malloc_3.Split 0 1
 malloc_3.Split 0 0
 malloc_3.Split 0 0
@@ -1176,7 +1176,7 @@ malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
-malloc_3.realloc 1 0.0031449
+malloc_3.realloc 1 0.0127378
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
@@ -1204,43 +1204,43 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_3.Check 0 1
 malloc_3.0 0 1
 malloc_3.Max 0 1
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
 malloc_3.Wilderness 0 1
 malloc_3.Wilderness 0 0
 malloc_3.Large 0 1
 malloc_3.Large 0 0
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
 malloc_3.Split 0 1
 malloc_3.Split 0 0
 malloc_3.Split 0 0
@@ -1250,7 +1250,7 @@ malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
-malloc_3.realloc 1 0.0031449
+malloc_3.realloc 1 0.0127378
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
@@ -1278,43 +1278,43 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_3.Check 0 1
 malloc_3.0 0 1
 malloc_3.Max 0 1
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
 malloc_3.Wilderness 0 1
 malloc_3.Wilderness 0 0
 malloc_3.Large 0 1
 malloc_3.Large 0 0
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
 malloc_3.Split 0 1
 malloc_3.Split 0 0
 malloc_3.Split 0 0
@@ -1324,7 +1324,7 @@ malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
-malloc_3.realloc 1 0.0031449
+malloc_3.realloc 1 0.0127378
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
@@ -1358,17 +1358,17 @@ malloc_4.Wilderness 0 1
 malloc_4.Wilderness 0 0
 malloc_4.Large 0 1
 malloc_4.Large 0 0
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
 malloc_4.Split 0 1
 malloc_4.Split 0 0
 malloc_4.Split 0 0
@@ -1378,7 +1378,7 @@ malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
-malloc_4.realloc 1 0.003509
+malloc_4.realloc 1 0.0058589
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
@@ -1413,43 +1413,43 @@ malloc_1.Max 0 1
 malloc_2.Check 0 1
 malloc_2.0 0 1
 malloc_2.Max 0 1
-malloc_2.free 4 0.00100875
-malloc_2.free 4 0.00100875
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.Reuse 1 0.0044884
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.scalloc 1 0.0029446
-malloc_2.realloc 1 0.01427
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
 malloc_2.srealloc 0 0
 malloc_3.Check 0 1
 malloc_3.0 0 1
 malloc_3.Max 0 1
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
-malloc_3.free 1 0.004391
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
 malloc_3.Wilderness 0 1
 malloc_3.Wilderness 0 0
 malloc_3.Large 0 1
 malloc_3.Large 0 0
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.Reuse 1 0.0037541
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
-malloc_3.scalloc 1 0.0030512
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
 malloc_3.Split 0 1
 malloc_3.Split 0 0
 malloc_3.Split 0 0
@@ -1459,7 +1459,7 @@ malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
 malloc_3.Merge 0 0
-malloc_3.realloc 1 0.0031449
+malloc_3.realloc 1 0.0127378
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
 malloc_3.srealloc 0 0
@@ -1493,17 +1493,17 @@ malloc_4.Wilderness 0 1
 malloc_4.Wilderness 0 0
 malloc_4.Large 0 1
 malloc_4.Large 0 0
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.Reuse 1 0.0040103
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
-malloc_4.scalloc 1 0.0037657
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
 malloc_4.Split 0 1
 malloc_4.Split 0 0
 malloc_4.Split 0 0
@@ -1513,7 +1513,7 @@ malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
 malloc_4.Merge 0 0
-malloc_4.realloc 1 0.003509
+malloc_4.realloc 1 0.0058589
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
 malloc_4.srealloc 0 0
@@ -1542,91 +1542,226 @@ malloc_4.Huge 0 0
 malloc_4.Dynamic 0 0
 malloc_4.Dynamic 0 2
 malloc_4.Dynamic 0 0
-malloc_1.Check size 1 0.0038389
-malloc_1.0 size 1 0.003665
-malloc_1.Max size 1 0.0035058
-malloc_2.Check size 1 0.003926
-malloc_2.0 size 1 0.004372
-malloc_2.Max size 1 0.0045092
-malloc_2.free 2 1 0.0044094
-malloc_2.free 3 1 0.0091237
-malloc_2.Reuse two blocks 1 0.0038576
-malloc_2.Reuse two blocks reverse 1 0.0032807
-malloc_2.Reuse two blocks both 1 0.0035364
-malloc_2.Reuse two blocks sizes small 1 0.0032644
-malloc_2.Reuse two blocks sizes large 1 0.0027499
-malloc_2.scalloc taint 1 0.0032061
-malloc_2.scalloc 0 size 1 0.0033246
-malloc_2.scalloc Max size num 1 0.18626
-malloc_2.scalloc Max size size 1 0.152205
-malloc_2.scalloc Max size both 1 0.187985
-malloc_2.realloc shrink 1 0.0032115
-malloc_2.srealloc Max size 1 0.0058737
-malloc_3.Check size 1 0.0039121
-malloc_3.0 size 1 0.0034393
-malloc_3.Max size 1 0.004178
-malloc_3.free 2 1 0.0043326
-malloc_3.free 3 1 0.0043251
-malloc_3.free holes 1 1 0.0042806
-malloc_3.free holes 2 1 0.0037535
-malloc_3.free holes 3 1 0.004178
-malloc_3.Wilderness available 1 0.0048359
-malloc_3.Wilderness available pad 1 0.0038768
-malloc_3.Large allocation 1 0.0038418
-malloc_3.Large unaligned allocation 1 0.0050759
-malloc_3.Reuse two blocks 1 0.0037047
-malloc_3.Reuse two blocks reverse 1 0.0037122
-malloc_3.Reuse two blocks both 1 0.0056693
-malloc_3.Reuse two blocks sizes small 1 0.0032364
-malloc_3.Reuse two blocks sizes small reversed 1 0.0030412
-malloc_3.Reuse two blocks sizes large 1 0.0033456
-malloc_3.scalloc taint 1 0.0032526
-malloc_3.scalloc 0 size 1 0.0030899
-malloc_3.scalloc Max size num 1 0.247156
-malloc_3.scalloc Max size size 1 0.183862
-malloc_3.scalloc Max size both 1 0.199977
-malloc_3.Split block 1 0.0117572
-malloc_3.Split block under threshold 1 0.0040824
-malloc_3.Split block threshold 1 0.0030365
-malloc_3.Merge with prev block 1 0.0031733
-malloc_3.Merge with prev block pad 1 0.0030851
-malloc_3.Merge with next block 1 0.0029716
-malloc_3.Merge with next block pad 1 0.0032302
-malloc_3.Merge with both blocks 1 0.0028375
-malloc_3.Merge with both blocks pad 1 0.002886
-malloc_3.realloc shrink 1 0.0032878
-malloc_3.srealloc Max size 1 0.0035407
-malloc_3.srealloc case a 1 0.0033534
-malloc_3.srealloc case a split 1 0.0040546
+malloc_1.Check 0 1
+malloc_1.0 0 1
+malloc_1.Max 0 1
+malloc_2.Check 0 1
+malloc_2.0 0 1
+malloc_2.Max 0 1
+malloc_2.free 4 0.00282835
+malloc_2.free 4 0.00282835
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.Reuse 1 0.0125796
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.scalloc 1 0.0154081
+malloc_2.realloc 1 0.0106106
+malloc_2.srealloc 0 0
+malloc_3.Check 0 1
+malloc_3.0 0 1
+malloc_3.Max 0 1
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.free 1 0.0124974
+malloc_3.Wilderness 0 1
+malloc_3.Wilderness 0 0
+malloc_3.Large 0 1
+malloc_3.Large 0 0
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.Reuse 1 0.0095746
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.scalloc 1 0.0093241
+malloc_3.Split 0 1
+malloc_3.Split 0 0
+malloc_3.Split 0 0
+malloc_3.Merge 0 0
+malloc_3.Merge 0 0
+malloc_3.Merge 0 0
+malloc_3.Merge 0 0
+malloc_3.Merge 0 0
+malloc_3.Merge 0 0
+malloc_3.realloc 1 0.0127378
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_3.srealloc 0 0
+malloc_4.Check 0 0
+malloc_4.0 0 1
+malloc_4.Max 0 1
+malloc_4.free 0 0
+malloc_4.free 0 0
+malloc_4.free 0 0
+malloc_4.free 0 0
+malloc_4.free 0 0
+malloc_4.Wilderness 0 1
+malloc_4.Wilderness 0 0
+malloc_4.Large 0 1
+malloc_4.Large 0 0
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.Reuse 1 0.0047809
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.scalloc 1 0.0047589
+malloc_4.Split 0 1
+malloc_4.Split 0 0
+malloc_4.Split 0 0
+malloc_4.Merge 0 0
+malloc_4.Merge 0 0
+malloc_4.Merge 0 0
+malloc_4.Merge 0 0
+malloc_4.Merge 0 0
+malloc_4.Merge 0 0
+malloc_4.realloc 1 0.0058589
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.srealloc 0 0
+malloc_4.Huge 0 0
+malloc_4.Huge 0 0
+malloc_4.Huge 0 0
+malloc_4.Huge 0 0
+malloc_4.Dynamic 0 0
+malloc_4.Dynamic 0 2
+malloc_4.Dynamic 0 0
+malloc_1.Check size 1 0.0128654
+malloc_1.0 size 1 0.0106302
+malloc_1.Max size 1 0.0106716
+malloc_2.Check size 1 0.0118227
+malloc_2.0 size 1 0.0127308
+malloc_2.Max size 1 0.0132459
+malloc_2.free 2 1 0.011957
+malloc_2.free 3 1 0.0107228
+malloc_2.Reuse two blocks 1 0.0124382
+malloc_2.Reuse two blocks reverse 1 0.0121713
+malloc_2.Reuse two blocks both 1 0.0100437
+malloc_2.Reuse two blocks sizes small 1 0.0121063
+malloc_2.Reuse two blocks sizes large 1 0.0116248
+malloc_2.scalloc taint 1 0.0112492
+malloc_2.scalloc 0 size 1 0.0124192
+malloc_2.scalloc Max size num 1 0.271301
+malloc_2.scalloc Max size size 1 0.110265
+malloc_2.scalloc Max size both 1 0.119325
+malloc_2.realloc shrink 1 0.01127
+malloc_2.srealloc Max size 1 0.0109568
+malloc_3.Check size 1 0.0131799
+malloc_3.0 size 1 0.0135022
+malloc_3.Max size 1 0.0127584
+malloc_3.free 2 1 0.0114425
+malloc_3.free 3 1 0.0098234
+malloc_3.free holes 1 1 0.0111766
+malloc_3.free holes 2 1 0.0111818
+malloc_3.free holes 3 1 0.0101903
+malloc_3.Wilderness available 1 0.0113095
+malloc_3.Wilderness available pad 1 0.0114717
+malloc_3.Large allocation 1 0.0122971
+malloc_3.Large unaligned allocation 1 0.0118376
+malloc_3.Reuse two blocks 1 0.0122602
+malloc_3.Reuse two blocks reverse 1 0.0114019
+malloc_3.Reuse two blocks both 1 0.0120651
+malloc_3.Reuse two blocks sizes small 1 0.0095367
+malloc_3.Reuse two blocks sizes small reversed 1 0.0109045
+malloc_3.Reuse two blocks sizes large 1 0.011572
+malloc_3.scalloc taint 1 0.0112401
+malloc_3.scalloc 0 size 1 0.0103985
+malloc_3.scalloc Max size num 1 0.107291
+malloc_3.scalloc Max size size 1 0.110083
+malloc_3.scalloc Max size both 1 0.107315
+malloc_3.Split block 1 0.0119253
+malloc_3.Split block under threshold 1 0.0094971
+malloc_3.Split block threshold 1 0.0127227
+malloc_3.Merge with prev block 1 0.0100536
+malloc_3.Merge with prev block pad 1 0.0103672
+malloc_3.Merge with next block 1 0.0111636
+malloc_3.Merge with next block pad 1 0.010098
+malloc_3.Merge with both blocks 1 0.0119003
+malloc_3.Merge with both blocks pad 1 0.010802
+malloc_3.realloc shrink 1 0.0107841
+malloc_3.srealloc Max size 1 0.0126984
+malloc_3.srealloc case a 1 0.0131573
+malloc_3.srealloc case a split 1 0.0107321
 malloc_3.srealloc case a mmap 0 0
-malloc_3.srealloc case b 1 0.0046414
-malloc_3.srealloc case b metadata 1 0.0051187
-malloc_3.srealloc case b split 1 0.0034646
-malloc_3.srealloc case b wilderness 1 0.0034174
-malloc_3.srealloc case b wilderness 2 1 0.003675
-malloc_3.srealloc case c 1 0.0041379
-malloc_3.srealloc case c 2 1 0.0041388
-malloc_3.srealloc case d 1 0.0038015
-malloc_3.srealloc case d metadata 1 0.003858
-malloc_3.srealloc case d split 1 0.0037943
-malloc_3.srealloc case e 1 0.0035692
-malloc_3.srealloc case e no pad 1 0.0040351
-malloc_3.srealloc case e split 1 0.0046822
-malloc_3.srealloc case fi 1 0.0043708
-malloc_3.srealloc case fii 1 0.0038847
-malloc_3.srealloc case g 1 0.0039583
-malloc_3.srealloc case h 1 0.0100343
+malloc_3.srealloc case b 1 0.0093105
+malloc_3.srealloc case b metadata 1 0.0121785
+malloc_3.srealloc case b split 0 0
+malloc_3.srealloc case b wilderness 1 0.0114991
+malloc_3.srealloc case b wilderness 2 1 0.0102573
+malloc_3.srealloc case c 1 0.0134193
+malloc_3.srealloc case c 2 1 0.0103022
+malloc_3.srealloc case d 1 0.0106587
+malloc_3.srealloc case d metadata 1 0.0099993
+malloc_3.srealloc case d split 1 0.0098463
+malloc_3.srealloc case e 1 0.0108313
+malloc_3.srealloc case e no pad 1 0.0121441
+malloc_3.srealloc case e split 1 0.0086075
+malloc_3.srealloc case fi 1 0.00751
+malloc_3.srealloc case fii 1 0.0066494
+malloc_3.srealloc case g 1 0.0069946
+malloc_3.srealloc case h 1 0.0045484
 malloc_4.Check size 0 0
-malloc_4.0 size 1 0.0042353
-malloc_4.Max size 1 0.0052779
+malloc_4.0 size 1 0.0047006
+malloc_4.Max size 1 0.0055299
 malloc_4.free 2 0 0
 malloc_4.free 3 0 0
 malloc_4.free holes 1 0 0
 malloc_4.free holes 2 0 0
 malloc_4.free holes 3 0 0
-malloc_4.Wilderness available 1 0.0053309
-malloc_4.Wilderness available pad 1 0.0037611
-malloc_4.Large allocation 1 0.0047107
+malloc_4.Wilderness available 1 0.0047827
+malloc_4.Wilderness available pad 1 0.0052042
+malloc_4.Large allocation 1 0.0053681
 malloc_4.Large unaligned allocation 0 0
 malloc_4.Reuse two blocks 0 0
 malloc_4.Reuse two blocks reverse 0 0
@@ -1634,51 +1769,52 @@ malloc_4.Reuse two blocks both 0 0
 malloc_4.Reuse two blocks sizes small 0 0
 malloc_4.Reuse two blocks sizes small reversed 0 0
 malloc_4.Reuse two blocks sizes large 0 0
-malloc_4.scalloc taint 1 0.0041333
-malloc_4.scalloc 0 size 1 0.0035827
-malloc_4.scalloc Max size num 1 0.0040789
-malloc_4.scalloc Max size size 1 0.0036546
-malloc_4.scalloc Max size both 1 0.0043978
-malloc_4.Split block 1 0.0038483
-malloc_4.Split block under threshold 1 0.0042262
-malloc_4.Split block threshold 1 0.0034821
-malloc_4.Merge with prev block 1 0.0035722
-malloc_4.Merge with prev block pad 1 0.0029564
-malloc_4.Merge with next block 1 0.0034528
-malloc_4.Merge with next block pad 1 0.0035805
-malloc_4.Merge with both blocks 1 0.0033272
-malloc_4.Merge with both blocks pad 1 0.0034112
-malloc_4.realloc shrink 1 0.0040194
-malloc_4.srealloc Max size 1 0.0042737
-malloc_4.srealloc case a 1 0.0042519
-malloc_4.srealloc case a split 1 0.0045534
+malloc_4.scalloc taint 1 0.0054464
+malloc_4.scalloc 0 size 1 0.0044963
+malloc_4.scalloc Max size num 1 0.0048769
+malloc_4.scalloc Max size size 1 0.0083421
+malloc_4.scalloc Max size both 1 0.0066871
+malloc_4.Split block 1 0.0057835
+malloc_4.Split block under threshold 1 0.0082828
+malloc_4.Split block threshold 1 0.0057922
+malloc_4.Merge with prev block 1 0.0095835
+malloc_4.Merge with prev block pad 1 0.0057483
+malloc_4.Merge with next block 1 0.0044197
+malloc_4.Merge with next block pad 1 0.0048561
+malloc_4.Merge with both blocks 1 0.0043436
+malloc_4.Merge with both blocks pad 1 0.0056036
+malloc_4.realloc shrink 1 0.0057098
+malloc_4.srealloc Max size 1 0.0063626
+malloc_4.srealloc case a 1 0.0044807
+malloc_4.srealloc case a split 1 0.0045606
 malloc_4.srealloc case a mmap 0 0
-malloc_4.srealloc case b 1 0.0047596
-malloc_4.srealloc case b metadata 1 0.0050794
-malloc_4.srealloc case b split 1 0.0051143
-malloc_4.srealloc case b wilderness 1 0.0037812
-malloc_4.srealloc case b wilderness 2 1 0.0047389
-malloc_4.srealloc case c 1 0.0048271
-malloc_4.srealloc case c 2 1 0.0045112
-malloc_4.srealloc case d 1 0.0042817
-malloc_4.srealloc case d metadata 1 0.0040445
-malloc_4.srealloc case d split 1 0.0035951
-malloc_4.srealloc case e 1 0.0041385
-malloc_4.srealloc case e no pad 1 0.004323
-malloc_4.srealloc case e split 1 0.0038909
-malloc_4.srealloc case fi 1 0.0045291
-malloc_4.srealloc case fii 1 0.003385
-malloc_4.srealloc case g 1 0.0047384
-malloc_4.srealloc case h 1 0.0042016
-malloc_4.Huge pages smalloc 1 0.0043812
+malloc_4.srealloc case b 1 0.005287
+malloc_4.srealloc case b metadata 1 0.0048728
+malloc_4.srealloc case b split 0 0
+malloc_4.srealloc case b wilderness 1 0.0053834
+malloc_4.srealloc case b wilderness 2 1 0.0047241
+malloc_4.srealloc case c 1 0.0048543
+malloc_4.srealloc case c 2 1 0.0053504
+malloc_4.srealloc case d 1 0.0062465
+malloc_4.srealloc case d metadata 1 0.0050264
+malloc_4.srealloc case d split 1 0.0051062
+malloc_4.srealloc case e 1 0.0045416
+malloc_4.srealloc case e no pad 1 0.0046995
+malloc_4.srealloc case e split 1 0.0049198
+malloc_4.srealloc case fi 1 0.0045299
+malloc_4.srealloc case fii 1 0.0048008
+malloc_4.srealloc case g 1 0.0048807
+malloc_4.srealloc case h 1 0.0057651
+malloc_4.Huge pages smalloc 1 0.0049911
 malloc_4.Huge pages smalloc realloc 0 0
-malloc_4.Huge pages scalloc 1 0.0050629
+malloc_4.Huge pages scalloc 1 0.0050082
 malloc_4.Huge pages scalloc realloc 0 0
 malloc_4.Dynamic mmap 0 0
 malloc_4.Dynamic mmap 2 0 0
 malloc_4.Dynamic mmap threshold max 0 0
 ---
 malloc_3.srealloc case a mmap
+malloc_3.srealloc case b split
 malloc_4.Check size
 malloc_4.free
 malloc_4.free 2
@@ -1694,6 +1830,7 @@ malloc_4.Reuse two blocks sizes small
 malloc_4.Reuse two blocks sizes small reversed
 malloc_4.Reuse two blocks sizes large
 malloc_4.srealloc case a mmap
+malloc_4.srealloc case b split
 malloc_4.Huge pages smalloc realloc
 malloc_4.Huge pages scalloc realloc
 malloc_4.Dynamic mmap
